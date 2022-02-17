@@ -1,0 +1,71 @@
+HTML :
+
+<div class="pilihan1">
+                <form name="form">
+                1) Jenis akar dari persamaan kuadrat \[2x^{2} + x - 3 = 0\] adalah ...... <br>
+                <br>
+                <div class="qselections">
+                <button type="button" onclick="cek1()" >A</button> 2 akar real berbeda <br> <br>
+                <button type="button" onclick="cek2()" >B</button> 1 akar real yang sama (kembar) <br> <br>
+                <button type="button" onclick="cek3()" >C</button> tidak mempunyai akar real
+                <br><br>
+                Jawaban anda :<input type="text" name="jawaban" size="1">
+                </form1>
+                <br>
+                <button type="button" onclick="cekjawaban()" >cek jawaban</button>
+                <h3 id="tampil"></h3>
+              
+            </div>
+
+
+JSS :
+
+ 
+	function cek1(){
+        form.jawaban.value= "A";
+        }
+        function cek2(){
+        form.jawaban.value= "B";
+        }
+        function cek3(){
+        form.jawaban.value= "C";
+        }
+      
+        function cekjawaban(){
+        if(form.jawaban.value=='A'){
+        document.getElementById("tampil").innerHTML="Selamat! jawabanmu benar";
+        document.getElementById("tampil").style.color = "green";
+        }else{
+        document.getElementById("tampil").innerHTML="Jawabanmu salah!!<br> Ingat : <br>Jika D > 0, maka persamaan kuadrat mempunyai 2 akar real berbeda. <br>Jika D = 0, maka persamaan kuadrat mempunyai 1 akar real yang sama (kembar). <br>Jika D < 0, maka persamaan kuadrat tidak mempunyai akar real";
+        document.getElementById("tampil").style.color = "red";
+        }
+    }
+      
+
+    var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active2", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active2";
+  }

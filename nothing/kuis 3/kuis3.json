@@ -1,0 +1,102 @@
+[{
+    "soal0": {
+        "soal": "Diketahui selisih akar-akar persamaan kuadrat \\[x^{2} - mx + 24 = 0 \\] sama dengan 5, maka jumlah akar-akar persamaan tersebut adalah . . . .",
+        "a": "a. \\[12\\] atau \\[-12\\]",
+        "b": "b. \\[11\\] atau \\[-11\\]",
+        "c": "c. \\[9\\] atau \\[-9\\]",
+        "d": "d. \\[10\\] atau \\[-10\\]",
+        "benar": "d",
+        "nih": "b. \\[11\\] atau \\[-11\\]"
+    }
+}, {
+    "soal1": {
+        "soal": "Jika persamaan dibawah ini mempunyai akar real yang sama, maka nilai \\[k\\] yang memenuhi persamaan tersebut adalah . . . . <br>  \\[\\frac{x^{2} - 4x + 7}{1 - x} = k\\]",
+        "a": "a. \\[-2\\] atau \\[6\\]",
+        "b": "b. \\[-3\\] atau \\[5\\]",
+        "c": "c. \\[3\\] atau \\[-4\\]",
+        "d": "d. \\[21\\] atau \\[-6\\]",
+        "benar": "a",
+        "nih": "a. \\[-2\\] atau \\[6\\]"
+    }
+
+}, {
+    "soal2": {
+        "soal": "Jika jumlah akar-akar persamaan kuadrat \\[x^{2} + \\left ( 2k - 4 \\right )x - 3k^{2} - 24 = 0\\] adalah sama dengan nol, maka akar-akar tersebut adalah . . . . ",
+        "a": "a. \\[5\\] atau \\[-5\\]",
+        "b": "b. \\[6\\] atau \\[-6\\]",
+        "c": "c. \\[\\frac{3}{4}\\] atau \\[- \\frac{3}{4}\\]",
+        "d": "d. \\[4\\] atau \\[-4\\]",
+        "benar": "b",
+        "nih": "b. \\[6\\] atau \\[-6\\]"
+    }
+}, {
+    "soal3": {
+        "soal": "Salah satu akar dari persamaan kuadrat \\[2x^{2} + \\left ( 2k - 1 \\right )x + k = 0\\] merupakan kebalikan dari akar lain. Tentukan nilai \\[k\\] dan jumlah kedua akarnya adalah . . . .",
+        "a": "a. \\[x_{1} + x_{2} = \\frac{5}{4}\\]",
+        "b": "b. \\[x_{1} + x_{2} = - \\frac{5}{4}\\]",
+        "c": "c. \\[x_{1} + x_{2} = - \\frac{5}{2}\\]",
+        "d": "d. \\[x_{1} + x_{2} = \\frac{5}{2}\\]",
+        "benar": "d",
+        "nih": "d. \\[x_{1} + x_{2} = \\frac{5}{2}\\]"
+    }
+}, {
+    "soal4": {
+        "soal": "Jika nilai diskriminan dari persamaan kuadrat \\[2x^{2} - 9x + c\\] adalah \\[121\\], maka nilai \\[c =\\]. . . . ",
+        "a": "a. \\[-8\\]",
+        "b": "b. \\[-5\\]",
+        "c": "c. \\[5\\]",
+        "d": "d. \\[8\\]",
+        "benar": "b",
+        "nih": "b. \\[-5\\]"
+    }
+}, {
+    "soal5": {
+        "soal": "Diketahui \\[a\\] dan \\[b\\] adalah akar-akar dari \\[3x^{2} - px + 2q = 0\\] jika nilai dari \\[a + b = -2\\] dan \\[a \\cdot b = \\frac{4}{3}\\], maka nilai \\[p + q =\\] . . . .",
+        "a": "a. \\[2\\]",
+        "b": "b. \\[4\\]",
+        "c": "c. \\[-4\\]",
+        "d": "d. \\[-2\\]",
+        "benar": "c",
+        "nih": "c. \\[-4\\]"
+    }
+}, {
+    "soal6": {
+        "soal": "Diketahui \\[p\\] dan \\[q\\] adalah akar-akar dari persamaan \\[4x^{2} - ax + 1 = 0\\]. Jika \\[\\frac{p + q}{p \\cdot q} = 5\\], maka nilai \\[a^{2} - a\\] adalah . . . .",
+        "a": "a. \\[10\\]",
+        "b": "b. \\[20\\]",
+        "c": "c. \\[30\\]",
+        "d": "d. \\[35\\]",
+        "benar": "b",
+        "nih": "b. \\[20\\]"
+    }
+}, {
+    "soal7": {
+        "soal": "Banyaknya akar real dari persamaan kuadrat \\[x^{2} - 5x + 9 = 0\\] adalah . . . .",
+        "a": "a. \\[0\\]",
+        "b": "b. \\[1\\]",
+        "c": "c. \\[2\\]",
+        "d": "tidak dapat ditentukan",
+        "benar": "a",
+        "nih": "a. \\[0\\]"
+    }
+}, {
+    "soal8": {
+        "soal": "Jenis akar dari persamaan \\[2x^{2} + x - 3 = 0\\] adalah . . . .",
+        "a": "a. 2 akar real berbeda",
+        "b": "b. 1 akar sama",
+        "c": "c. tidak mempunyai akar real",
+        "d": "d. tidak dapat ditentukan",
+        "benar": "a",
+        "nih": "a. 2 akar real berbeda"
+    }
+}, {
+    "soal9": {
+        "soal": "Jika \\[x_{1}\\] dan \\[x_{2}\\] memenuhi peramaan dibawah ini, maka nilai dari \\[x_{1} + x_{2}\\] adalah . . . . <br> \\[2x = \\frac{x + 3}{x - 2}\\left ( x \\neq 2 \\right )\\]",
+        "a": "a. \\[\\frac{1}{3}\\]",
+        "b": "b. \\[\\frac{1}{2}\\]",
+        "c": "c. \\[\\frac{3}{2}\\]",
+        "d": "d. \\[\\frac{5}{2}\\]",
+        "benar": "d",
+        "nih": "d. \\[\\frac{5}{2}\\]"
+    }
+}]

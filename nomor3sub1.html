@@ -1,0 +1,56 @@
+<html>
+    <body>
+    <head>    <link rel="stylesheet" type="text/css" href="csssoal.css"></head>
+    <link href="cssbukanpenyelesaian.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" type="text/css" href="csssoal.css"></head>
+    <div class="pertanyaansub1">
+        <img src="Pertanyaan.png" width="940" height="70" class="gmb"><br>
+        <button class="isimateri petunjuk"></button><br>
+        <div id="petunjuk" >
+            <br>
+            <b style="color: rgb(182, 172, 134);"> Cara menjawab soal : </b><br>
+            <ol style="color: rgb(207, 201, 178);">
+              <li>Pertama hitung terlebih dahulu jawabanmu.</li><br>
+              <li>Setelah yakin dengan jawabanmu selanjutnya klik salah satu tombol.</li><br>
+              <li>Jika jawabanmu salah, maka ada bantuan berupa rumus.</li><br>
+              <li>Jika jawabanmu benar, maka akan dimunculkan alur pengerjaan jawaban yang benar.</li>
+            </ol>
+          </div>
+<br>
+
+          <p>3.) Selidiki apakah \[x = 2\] atau \[x = 5\] merupakan penyelesaian (akar) persamaan kuadrat \[x^2 -7x + 10 = 0\] atau bukan?<br>
+            </p><br>
+           
+            
+            <p>Silahkan jawab pertanyaan di atas dengan menekan salah satu tombol dibawah ini :</p><br>
+
+                  Jadi, \[x = 2\] atau \[x = 5\] merupakan : <br> <br>
+                    <input onclick="checkbenar()"
+                    type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+                    <label for="penyelesaian">Penyelesaian</label>
+                    (akar) persamaan \[x^2 - 7x + 10 = 0\]
+                    <br>
+
+                    <input onclick="checksalah()"
+                    type="radio" id="bknpenye" name="gender" value="bknpenye">
+                    <label for="bknpenye">Bukan Penyelesaian</label>
+                     (akar) persamaan \[x^2 - 7x + 10 = 0\]
+                    <center>
+                    <div class="pembahasan">
+                      <p id="jawaban"></p> 
+                      </div></center>
+                </p>
+     <!--penutup div nomor satu-->
+    </div>
+
+
+</div>
+<script src="jsbknpenye3.js"></script>
+<script src="jsbukan.js"></script>
+<script src="js1.js"></script>
+</body>
+ </html>

@@ -1,0 +1,850 @@
+* {
+    box-sizing: border-box; /*kolom utamanya*/
+  }
+  
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
+  .mundur1{
+    text-indent: 72px;
+  }
+  .mundur2{
+    text-indent: 138px;
+  }
+  
+  .mundur3{
+    text-indent: 195px;
+  }
+  .mundur4{
+    text-indent: 43px;
+  }
+  /* Header coyy*/
+  header {
+    background-image: url(judulfoto.png);
+    height: 80px;
+    text-align:center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* List materinya*/
+  nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    width: 23%;
+    height: 498px;  
+    background: #3CB371;
+    padding: 20px;
+    overflow-y: auto;
+    padding: 20px 10px 20px 40px;
+  }
+  
+  .nav a {
+    background-color: #DAA520; /* warna buttonnya*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #7d2941;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+  }
+  
+  
+  .dropdown .dropbtn {
+    background-color: #ff5252; /* warna buttonnya*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #7d2941;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+  }
+  
+  .nav a:hover, .dropdown:hover .dropbtn {
+    background-color: #af7f17;
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #556B2F; /* warna buttonnya*/
+    border: 1px solid #8FBC8B;
+    font-size: 12px;
+    min-width: 245px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    border: 1px solid #8FBC8B;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #DAA520;
+    border: 1px solid #7d2941;
+    color: black;
+  }
+  .dropdown-content .hvr {
+    color: black;
+    background-color: #DAA520;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-btn{
+    background-color: #00FFFF; /* warna buttonnya*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #B8860B;
+    color: black;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    width: 90%;
+    display: block;
+  }
+  
+  .dropdown-btn:hover {
+    color: white;
+    background-color: #B8860B;
+  }
+  
+  .aktif{
+    background-color:  #B8860B;
+    color: white;
+  }
+  
+  .dropdown-container {
+    display: none;
+  }
+  
+  .dropdown-containerr {
+    display: block;
+  }
+  
+  .active{
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #215538;
+  }
+  
+  li {
+    float: left;
+    margin-left: 15px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .text{
+    color: white;
+    font-size: 20px;
+  }
+
+  
+  
+  .bttn{
+    background-color:#00FFFF; /* warna buttonnya YG EVALUASI*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #B8860B;
+    color:black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    width: 90%;
+    display: block 
+  }
+  .bttn-nav .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  .bttn-nav .button:hover {
+    background-color: #866806;
+    
+  }
+  .button-nav .button {
+    background-color:#00FFFF; /* warna buttonnya YANG DIPILIH YG BERADA SDG DIBUKA*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #B8860B;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    width: 90%;
+    display: block;
+  }
+  
+  .button-nav .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  .button-nav .button:hover {
+    background-color: #B8860B;/* MENYALA SAAT SDG DIGUNAKAN */
+    
+  }
+  .lanjut{
+    background-color: #B8860B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 350px;
+  }
+
+
+.isimateri{
+  background-color: #DAA520; /*ISI MATERI SUB BAB*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  color: black;
+  padding: 7px 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.isimaterin:hover {background-color: #ff8a80}
+
+.isimateri:active {
+  background-color: #00ffff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.pembahasan{
+  margin-right: 12px;
+  margin: 15px;
+  padding: 30px;
+  width: 50%;
+  height: auto;
+  background-color: #aaeaf0;
+  border: 5px solid #2f88a3;
+  overflow: auto;
+  font-family: 'Bookman Old Style', serif;
+  border-radius: 8px;
+}
+#isimateri {
+  width: 100%;
+  height: 230px;
+  text-align: left;
+  background-color: #556B2F;
+  border: 3px #827717;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 10px;
+}
+#isipetunjuk {
+  width: 100%;
+  height: 150px;
+  text-align: left;
+  background-color: #556B2F;
+  border: 3px #827717;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 10px;
+}
+#petunjuk {
+  width: 100%;
+  height: 150px;
+  text-align: left;
+  background-color: #658f1c;
+  border: 3px #827717;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 10px;
+  
+}
+.jjj{
+  height: 400px 
+}
+.hilang{
+  display:none;
+  }
+
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .arahan{
+  font-weight: 600;
+  color: #127c12;
+  font-style: italic;
+  }
+  .arahanumum{
+    font-weight: 600;
+    color: #127c12;
+    font-style: italic;
+    margin-top: -47px;
+    }
+  .arahansubsub1{
+    font-weight: 600;
+    color: #127c12;
+    font-style: italic;
+   margin-top: -61px;
+    }
+    
+  .arahanrangkuman{
+    font-weight: 600;
+    color: #127c12;
+    font-style: italic;
+    margin-top: 203px;
+    }
+  .subsubsection1{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align-last: center;
+    color: #ffc940;
+    text-align: left;
+    background-color: #556B2F;
+    border: 3px solid #006400;
+    border-radius: 8px;
+  }
+  article{
+    font-family: cursive;
+    font-size: 18px; 
+    font-weight: 00; 
+    line-height: 26.4px;
+    text-align: justify;
+    float: right;
+    padding: 20px;
+    width: 77%;
+    background-color: #8FBC8F;
+    height: 498px; 
+    overflow: scroll;
+    overflow-x:hidden ;
+  }
+  
+  #isimateri{
+    margin-left: 0px;
+  }
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  footer {
+    background-color: #827717;
+
+    padding: 1px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+
+  }
+
+  
+.previous {
+  
+  padding: 10px;
+}
+
+.next {
+  
+  padding: 10px;
+}
+
+  
+  #myDIV {
+    width: 100%;
+    padding: 5px 0;
+    background-color: #ffeb3b;
+    margin-top: 5px;
+  }
+
+  .subsection{ /*INI JUDUL BAB*/
+    width: 100%;
+    height: 70px;
+    padding-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align-last: center;
+    color: #DAA520;
+    text-align: center;
+    background-color: #006400;
+    border: 3px solid #00FFFF;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+
+  .video{
+    height: 400px;
+    will-change: 500px;
+  }
+  
+  .bentukumum{
+    width: 300;
+    height:50px;
+    border: #357030 solid 2px;
+    border-radius: 8px;
+    padding:5px;
+    background-color: #8FBC8F;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .kotakfaktor{
+    width: 300;
+    height:50px;
+    border: #357030 solid 2px;
+    border-radius: 8px;
+    padding:5px;
+    background-color: #77e66d;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .marimengamati{
+    width: 990px;
+    height: auto;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .marimenanya{
+    width: 990px;
+    height: auto;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .maripecahkan{
+    width: 990px;
+    height: 1272px;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .maripecahkanfaktor{
+    width: 990px;
+    height: 1780px;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .maripecahkanA{
+    width: 990px;
+    height: 791px;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .marimencoba{
+    width: 990px;
+    height: 2000px;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+  }
+ 
+  .pertanyaansub1{
+    width: 988px;
+    height: 950px;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 14px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+   
+  }
+  .marimencobasubsub1{
+    width: 988px;
+    height: 1380px;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 14px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: -6px;
+    
+  }
+  .marimencobpenyelesaiansub1{
+    width: 988px;
+    height: 1472px;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 14px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+
+
+  .tempatnomor {
+    width: 988px;
+    height: auto;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 14px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2px;
+    margin-top: 19px;
+  }
+  .tempatnomorsub1 {
+    width: 988px;
+    height: auto;
+    border: dotted #357030 5px;
+    border-radius: 8px;
+    padding: 14px;
+    background-color: #ceffca;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2px;
+    margin-top: -300px;
+  }
+  .langkah1{
+    width: 100%;
+    height: 16px;
+    padding-top: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #DAA520;
+    text-align: left;
+    background-color: #ceffca;
+    font-weight: bold;
+  }
+  .kotaklangkah1{
+    width: 300;
+    height:130px;
+    border: #357030 solid 2px;
+    border-radius: 8px;
+    padding:5px;
+    background-color: #8FBC8F;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .kotaklangkah2{
+    width: 300;
+    height:110px;
+    border: #357030 solid 2px;
+    border-radius: 8px;
+    padding:0px;
+    background-color: #8FBC8F;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .panah{
+    height: 40px;
+    width: 40px;
+  }
+
+
+
+.panah2{
+  height: 40px;
+  width: 40px;
+}
+  #keta{
+    margin-left: 6px;
+    margin-top: 6px;
+  }
+  #ketb{
+    margin-left: 47px;
+    margin-top: -29px;
+
+  }
+  #ketc{
+    margin-left: 88px;
+    margin-top: -30px;
+
+  }
+
+  .panahketa2{
+    height: 40px;
+    width: 37px;
+  }
+    #keta2{
+      margin-left: 6px;
+      margin-top: 6px;
+    }
+    #ketb2{
+      margin-left: 47px;
+      margin-top: -29px;
+  
+    }
+    #ketc2{
+      margin-left: 88px;
+      margin-top: -30px;
+  
+    }
+
+
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* buat latihan mari mencobaslide */
+.slideshow-container {
+  max-width: 1000px;
+  padding-left: -35px;
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+  height: 920px; /*buat atur tinggi tombol123 */
+  position: relative;
+  margin: auto;
+  color: black;
+}
+
+
+.pre, .nex {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 4px 4px 0;
+  user-select: none;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 10px;
+  background: #ddd;
+}
+
+.nex {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.pre:hover, .nex:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.sjj:hover {background-color: #096633}
+
+.sjj:active {
+  background-color: #096633;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 34px;
+  width: 36px;
+  margin: 9px 2px;
+  background-color: #bbb;
+  border-radius: 21%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  padding: 4px;
+}
+
+.active2, .dot:hover {
+  background-color: #B8860B;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens, kada ngaruh sih*/
+  @media (max-width: 900px) {
+    nav{
+      width: 100%;
+      height: auto;
+      float:none;
+      font-size: 13px;
+    }
+    .marimengamati{
+      width: 100%;
+      height: auto;
+      float:none;
+      font-size: 13px;
+
+    }
+
+    .prev, .next,.text {font-size: 11px}
+
+    article {
+      width: 100%;
+      height: auto;
+      float:none;
+      font-size: 14px;
+      text-align: justify;
+    }
+    header {
+      background-image: url(judulhp.png);
+      background-size: 106% 95% ;
+    }
+    .video{
+      height: 250px;
+      width: 300px;
+    }
+    
+    img{
+      width: 15px;
+      height: 15px;
+    }
+    .icon{
+      width: 100px;
+      height: 100px;
+    }
+    .iconn{
+      width: 100px;
+      height: 100px;
+    }
+    .iconnn{
+      width: 100px;
+      height: 100px;
+    }
+  
+    .gmb{
+      width: 190px;
+      height: 50px;
+    }
+
+    .gmbr{
+      width: 210px;
+      height: 90px;
+    }
+  
+    #pengenalan{
+      width: 300px;
+      height: 300px;
+      margin-left: 1px;
+    }
+
+    .subsection{
+      height: auto;
+      width: 100%;
+      font-size: 5vw;
+      padding-top: 5px;
+      margin-bottom: 0px;
+    }
+
+    .lanjut{
+      float: left;
+    }
+
+    .divscratch{
+      overflow-y:hidden;
+      height: 280px;
+      width: 308px;
+      margin-bottom: -39px;
+    }
+  
+    .scratch{
+      margin-top: 12px;
+      width: 50%;
+      height: 360%;
+    }
+
+    #isimateri{
+      height: 280px;
+    }
+
+  }
+
+  mjx-container{
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline !important;
+    font-style:italic;
+  }

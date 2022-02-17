@@ -1,0 +1,94 @@
+<html>
+<head>
+    <link href="cssumum.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <div class="Pertanyaan">
+        <img src="pertanyaan.png" width="940" height="70" class="gmb"><br>
+        <button class="isimateri petunjuk"></button><br>
+        <div id="petunjuk" >
+            <br>
+            <b style="color: rgb(182, 172, 134);"> Cara menjawab soal : </b><br>
+            <ol style="color: rgb(207, 201, 178);">
+              <li>Pertama hitung terlebih dahulu jawabanmu.</li><br>
+              <li>Setelah yakin dengan jawabanmu selanjutnya klik salah satu tombol.</li><br>
+              <li>Jika jawabanmu salah, maka ada bantuan berupa rumus.</li><br>
+              <li>Jika jawabanmu benar, maka akan dimunculkan alur pengerjaan jawaban yang benar.</li>
+            </ol>
+          </div>
+  
+<br>
+
+
+      <p>5.) Dari persamaan kuadrat \[- x^2 - 9 - x = 0 \]. Tentukan variabel, koefisien, dan konstantanya. Pilih jawabanmu dengan menekan salah satu tombol.</p>
+
+      <center><p>Jawab: </p>  </center>
+
+          Variabel dari persamaan kuadrat \[- x^2 - 9 - x = 0 \] : <br>
+          <input onclick="checksalah()"
+          type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+          <label for="penyelesaian">\[-9\]</label>
+          <br>
+          <input onclick="checksalah()"
+          type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+          <label for="penyelesaian">\[-1, -1\]</label>
+          <br>
+          <input onclick="checkbenar()"
+          type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+          <label for="penyelesaian">\[x^2, x\]</label>
+          <br><br><br>
+
+          <center>
+            <div class="pembahasan1">
+              <p id="jawaban1"></p> 
+              </div></center>
+<br><br><br>
+              Koefisien dari persamaan kuadrat \[- x^2 - 9 - x = 0 \] : <br>
+              <input onclick="checksalahh()"
+              type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+              <label for="penyelesaian">\[-9\]</label>
+              <br>
+              <input onclick="checkbenarr()"
+              type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+              <label for="penyelesaian">\[-1, -1\]</label>
+              <br>
+              <input onclick="checksalahh()"
+              type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+              <label for="penyelesaian">\[x^2, x\]</label>
+              <br><br><br>
+    
+              <center>
+                <div class="pembahasan2">
+                  <p id="jawaban2"></p> 
+                  </div></center>
+                  <br><br><br>
+                  Konstanta dari persamaan kuadrat \[- x^2 - 9 - x = 0 \] : <br>
+                  <input onclick="checksalahhh()"
+                  type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+                  <label for="penyelesaian">\[x^2, x\]</label>
+                  <br>
+                  <input onclick="checksalahhh()"
+                  type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+                  <label for="penyelesaian">\[-1, -1\]</label>
+                  <br>
+                  <input onclick="checkbenarrr()"
+                  type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+                  <label for="penyelesaian">\[-9\]</label>
+                  <br><br><br>
+        
+                  <center>
+                    <div class="pembahasan3">
+                      <p id="jawaban3"></p> 
+                      </div></center>
+
+
+
+  </body>
+ <!--penutup div nomor satu-->
+</div>
+<script src="jsumum5.js"></script>
+<script src="isimateri.js"></script>

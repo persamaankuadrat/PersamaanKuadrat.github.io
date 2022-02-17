@@ -1,0 +1,49 @@
+btn5.addEventListener("click",function(){
+    if(input5.value == "9" && input4a.value=="-2"){
+        aksi5.innerHTML = `<img src="cek.png" >`
+    }
+    else{
+        aksi5.innerHTML = `<img src="salah.png" >`
+    }
+    MathJax.typeset();
+  })
+  input5.addEventListener("keyup",function(){
+    input5.value = input5.value.split(' ').join('');
+  })
+  input5a.addEventListener("keyup",function(){
+    input5a.value = input5a.value.split(' ').join('');
+  })
+
+
+<span id="keta">
+
+function ceka(){
+    var jwb1 = document.getElementById("texta");
+   
+    var y = jwb1.value.toLowerCase();
+    y=y.replace(/\s+/g, '');
+
+
+if(y == "-7"){
+    document.getElementById("keta").innerHTML = "<img src='benar.png' style='width:30px; height:30px;'>";
+  } else{
+    document.getElementById("keta").innerHTML = "<img src='salah.png' style='width:30px; height:30px;'>";
+    
+  }
+
+}
+
+function cekb(){
+    var jwb1 = document.getElementById("textb");
+   
+    var y = jwb1.value.toLowerCase();
+    y=y.replace(/\s+/g, '');
+
+
+if(y == "-3"){
+    document.getElementById("ketb").innerHTML = "<img src='benar.png' style='width:30px; height:30px;'>";
+  } else{
+    document.getElementById("ketb").innerHTML = "<img src='salah.png' style='width:30px; height:30px;'>";
+  }
+
+}

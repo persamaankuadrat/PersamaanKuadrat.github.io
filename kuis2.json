@@ -1,0 +1,102 @@
+[{
+    "soal0": {
+        "soal": "Nilai yang memenuhi \\[x\\left ( x + 1\\right ) = 0\\] adalah . . . .",
+        "a": "a. \\[x = 1\\] atau \\[x = -1\\]",
+        "b": "b. \\[x = -1\\]",
+        "c": "c. \\[x = 0\\] atau \\[x = -1\\]",
+        "d": "d. \\[x = 1\\]",
+        "benar": "c",
+        "nih": "c. \\[x = 0\\] atau \\[x = -1\\]"
+    }
+}, {
+    "soal1": {
+        "soal": "Himpunan penyelesaian dari persamaan \\[x^{2} + 7x + 12 = 0\\] dengan cara memfaktorkan adalah . . . .",
+        "a": "a. \\[\\left \\{ -3, -4 \\right \\}\\]",
+        "b": "b. \\[\\left \\{ 3, -4 \\right \\}\\]",
+        "c": "c. \\[\\left \\{ 3, 4 \\right \\}\\]",
+        "d": "d. \\[\\left \\{ -3, 4 \\right \\}\\]",
+        "benar": "a",
+        "nih": "a. \\[\\left \\{ -3, -4 \\right \\}\\]"
+    }
+
+}, {
+    "soal2": {
+        "soal": "Himpunan penyelesaian dari persamaan  \\[2x^{2} + 7x - 4 = 0\\] dengan cara menyempurnakan kuadrat sempurna adalah . . . .",
+        "a": "a. \\[\\left \\{ 3, 4 \\right \\}\\]",
+        "b": "b. \\[\\left \\{ \\frac{1}{2}, -4 \\right \\}\\]",
+        "c": "c. \\[\\left \\{ -3, -4 \\right \\}\\]",
+        "d": "d. \\[\\left \\{ 2, 4 \\right \\}\\]",
+        "benar": "b",
+        "nih": "b. \\[\\left \\{ \\frac{1}{2}, -4 \\right \\}\\]"
+    }
+}, {
+    "soal3": {
+        "soal" : "Himpunan penyelesaian dari persamaan \\[4x^{2} - 20x + 23 = 0\\] dengan menggunakan rumus kuadratis adalah . . . .",
+        "a": "a. \\[\\left \\{ 2, 4 \\right \\}\\]",
+        "b": "b. \\[\\left \\{ 3, 4 \\right \\}\\]",
+        "c": "c. \\[\\left \\{ 3\\sqrt{4} , 2\\sqrt{4} \\right \\}\\]",
+        "d": "d. \\[\\left \\{ 3\\sqrt{2} , 2\\sqrt{2} \\right \\}\\]",
+        "benar": "d",
+        "nih": "d. \\[\\left \\{ 3\\sqrt{2} , 2\\sqrt{2} \\right \\}\\]"
+    }
+}, {
+    "soal4": {
+        "soal": "\\[-\\frac{1}{2}\\] atau \\[3\\] akar - akar persamaan kuadrat dari . . . . ",
+        "a": "a. \\[2x^{2} + 5x - 3 = 0\\]",
+        "b": "b. \\[2x^{2} - 5x - 3 = 0\\]",
+        "c": "c. \\[2x^{2} + 7x + 3 = 0\\]",
+        "d": "d. \\[2x^{2} - 3x - 5 = 0\\]",
+        "benar": "b",
+        "nih": "b. \\[2x^{2} - 5x - 3 = 0\\]"
+    }
+}, {
+    "soal5": {
+        "soal": "Salah satu akar dari persamaan kuadrat \\[x^{2} + ax - 6 = 0\\] adalah 2, maka nilai \\[a\\] haruslah sama dengan . . . .",
+        "a": "a. \\[-1\\]",
+        "b": "b. \\[1\\]",
+        "c": "c. \\[3\\]",
+        "d": "d. \\[4\\]",
+        "benar": "b",
+        "nih": "b. \\[1\\]"
+    }
+}, {
+    "soal6": {
+        "soal": "Himpunan penyelesaian dari persamaan \\[x^{2} + \\left ( x + 2 \\right )^{2} - 2 = 0\\] menggunakan rumus kuadratis adalah . . . .",
+        "a": "a. \\[\\left \\{ -1, -1 \\right \\}\\]",
+        "b": "b. \\[\\left \\{ -1, 1 \\right \\}\\]",
+        "c": "c. \\[\\left \\{ 1, 1 \\right \\}\\]",
+        "d": "d. \\[\\left \\{ 1, 2 \\right \\}\\]",
+        "benar": "a",
+        "nih": "a. \\[\\left \\{ -1, -1 \\right \\}\\]"
+    }
+}, {
+    "soal7": {
+        "soal": "Akar-akar dari persamaan kuadrat \\[2x^{2} + 5x + 3 = 0\\] menggunakan rumus faktorisasi adalah . . . .",
+        "a": "a. \\[x = - 2\\] atau \\[x = - 1\\]",
+        "b": "b. \\[x = - 2\\] atau \\[x = \\frac{3}{4}\\]",
+        "c": "c. \\[x = - 1\\] atau \\[x = - \\frac{3}{2}\\]",
+        "d": "d. \\[x = - 2\\] atau \\[x = - \\frac{3}{4}\\]",
+        "benar": "c",
+        "nih": "c. \\[x = - 1\\] atau \\[x = - \\frac{3}{2}\\]"
+    }
+}, {
+    "soal8": {
+        "soal": "Akar-akar dari persamaan kuadrat \\[2x^{2} + 15x + 7 = 0\\] dengan cara melengkapkan kuadrat sempurna adalah. . . .",
+        "a": "a. \\[x = - 2\\] atau \\[x = - 1\\]",
+        "b": "b. \\[x = - 2\\] atau \\[x =  1\\]",
+        "c": "c. \\[x = - \\frac{1}{2}\\] atau \\[x = - 7\\]",
+        "d": "d. \\[x = - \\frac{1}{4}\\] atau \\[x = 7\\]",
+        "benar": "c",
+        "nih": "c. \\[x = - \\frac{1}{2}\\] atau \\[x = - 7\\]"
+    }
+}, {
+    "soal9": {
+        "soal": "Persamaan kuadrat yang akar-akarnya \\[-3\\] dan \\[\\frac{1}{2}\\] adalah . . . .",
+        "a": "a. \\[2x^{2} + 5x - 3 = 0\\]",
+        "b": "b. \\[2x^{2} - 5x - 3 = 0\\]",
+        "c": "c. \\[2x^{2} - 3x + 5 = 0\\]",
+        "d": "d. \\[2x^{2} + 3x - 5 = 0\\]",
+        "benar": "a",
+        "nih": "a. \\[2x^{2} + 5x - 3 = 0\\]"
+    }
+}]
