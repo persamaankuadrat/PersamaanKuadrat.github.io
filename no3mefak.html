@@ -1,0 +1,61 @@
+<html>
+    <body>
+    <head>    <link rel="stylesheet" type="text/css" href="csssoal.css"></head>
+    <link href="cssmenyusunfaktor.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <div class="pertanyaan">
+        <img src="Pertanyaan.png" width="940" height="70" class="gmb"><br>
+        <button class="isimateri petunjuk"></button><br>
+        <div id="petunjuk" >
+            <br>
+            <b style="color: rgb(182, 172, 134);"> Cara menjawab soal : </b><br>
+            <ol style="color: rgb(207, 201, 178);">
+              <li>Pertama hitung terlebih dahulu jawabanmu.</li><br>
+              <li>Setelah yakin dengan jawabanmu selanjutnya klik salah satu tombol.</li><br>
+              <li>Jika jawabanmu salah, maka ada bantuan berupa rumus.</li><br>
+              <li>Jika jawabanmu benar, maka akan dimunculkan alur pengerjaan jawaban yang benar.</li>
+            </ol>
+          </div>
+  
+<br>
+
+        <p>3.) Dengan cara faktor, tentukan persamaan kuadrat yang jika diketahui akar-akarnya yakni \[x_{1} = -1\] dan \[x_{2} = -\frac{1}{5}\] adalah . . .</p>
+        <br>
+            
+            <p>Silahkan jawab pertanyaan di atas dengan menekan salah satu tombol dibawah ini :</p><br>
+
+                  Jadi, persamaan kuadrat dari akar \[x_{1} = -1\] dan \[x_{2} = -\frac{1}{5}\] yakni : <br> <br>
+                    <input onclick="checksalah()"
+                    type="radio" id="bknpenye" name="gender" value="bknpenye">
+                    <label for="bknpenye">\[5x^2 - 10x + 4 = 0\]</label>
+                    <br>
+
+                    <input onclick="checksalah()"
+                    type="radio" id="bknpenye" name="gender" value="bknpenye">
+                    <label for="bknpenye">\[5x^2 + 10x - 25 = 0\]</label><br>
+
+                    <input onclick="checkbenar()"
+                    type="radio" id="penyelesaian" name="gender" value="penyelesaian">
+                    <label for="penyelesaian">\[5x^2 + 6x + 1 = 0\]</label>
+
+                    <center>
+                    <div class="pembahasan">
+                      <p id="jawaban"></p> 
+                      </div></center>
+                </p>
+             
+          
+          
+     <!--penutup div nomor satu-->
+    </div>
+
+
+</div>
+<script src="jsno3mefak.js"></script>
+<script src="jskuadratsempurna.js"></script>
+</body>
+ </html>

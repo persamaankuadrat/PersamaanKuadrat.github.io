@@ -9,19 +9,6 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-
-  let temp = document.querySelector(".full");
-  let task =firebase.database().ref('kontrolevaluasi/');
-  task.on("child_added", function(data){
-    let values=data.val();
-    console.log("NILAI" +values.nilai);
-    console.log("Task "+task);
-    if(values.nilai==1){
-        temp.classList.toggle("hidde");
-    }
-  });
-
-
 let selanjutnya = document.querySelector('.lanjut');
 let datadiri = document.querySelector('.data_diri');
 namanya = document.getElementById('nama');
@@ -31,7 +18,6 @@ let sekolahfix = '';
 let kelasfix = '';
 
 selanjutnya.addEventListener('click', function () {
-
     let cek = 0;
     if (namanya.value == "") {
         if (namanya.className.indexOf('tt_salah') == -1) {
@@ -67,8 +53,7 @@ selanjutnya.addEventListener('click', function () {
             kelasfix = "9H";
         } else if (kelasnya.value == "9") {
             kelasfix = "9I";
-        } 
-
+        }
         cek += 1;
     }
 
@@ -84,12 +69,12 @@ selanjutnya.addEventListener('click', function () {
         cek += 1;
     }
 
-    console.log(sekolahfix);
+    // console.log(sekolahfix);
 
     if (cek != 3) {
         alert("lengkapi dulu data dari anda");
     } else if (cek == 3) {
-        document.getElementById('dafis').className += ' hilang';
+        // document.getElementById('dafis').className += ' hilang';
         document.getElementById('data').className += ' hilang';
         datadiri.className += ' hilang';
         document.getElementById('kiri').className = document.getElementById('kiri').className.replace('hilang', '');
@@ -122,7 +107,7 @@ dat.onreadystatechange = function () {
     salahh = 0;
 
     if (dat.readyState == 4 && dat.status == 200) {
-        // tankap apapun responsnya tangkap,lalu diubah ke objeck
+        // tangkap apapun responsnya tangkap,lalu diubah ke objeck
         let data = JSON.parse(this.responseText);
         // melihat data 
         // console.log(data);
@@ -143,16 +128,15 @@ dat.onreadystatechange = function () {
 
         for (let i = 0; i < cek.length; i++) {
             let nilai = cek[i];
-
             let soaldata = data[nilai]["soal" + nilai]["soal"];
             let jwb0 = data[nilai]["soal" + nilai]["a"];
             let jwb1 = data[nilai]["soal" + nilai]["b"];
             let jwb2 = data[nilai]["soal" + nilai]["c"];
             let jwb3 = data[nilai]["soal" + nilai]["d"];
-            let nih = data[nilai]["soal" + nilai]["nih"];
+            let jwban = data[nilai]["soal" + nilai]["jwban"];
             let bnr = data[nilai]["soal" + nilai]["benar"];
 
-            let jwb = [jwb0, jwb1, jwb2, jwb3, nih];
+            let jwb = [jwb0, jwb1, jwb2, jwb3, jwban];
 
             jwbs.push(bnr);
 
@@ -290,9 +274,6 @@ dat.onreadystatechange = function () {
 
         //cek jawaban
         let selesai = document.querySelector(".selesai");
-        let pil_user = [];
-        new_jwb_urut = [];
-        new_jwb_urut_no = [];
 
         selesai.addEventListener("click", function(){
             let sarat = 0;
@@ -319,7 +300,6 @@ dat.onreadystatechange = function () {
                     for (let j = 0; j < namaradio.length; j++) {
                         if(namaradio[j].checked){
                             checked = true;
-                            pil_user.push(namaradio[j].value);
                             if(namaradio[j].value == jwbs[i]){
                                 hasilakhir = hasilakhir + 5;
                                 benarr = benarr + 1;
@@ -329,16 +309,6 @@ dat.onreadystatechange = function () {
                         }
                     }
                 }
-                for (let i = 0; i < cek.length; i++) {
-                    for (let j = 0; j < cek.length; j++) {
-                        if (i == cek[j]) {
-                            new_jwb_urut.push(pil_user[j]);
-                            new_jwb_urut_no.push(cek[j]);
-                        }
-                    }
-                }
-                console.log("jwb_user_urut_no :" + new_jwb_urut_no);
-                console.log("jwb_user_urut :" + new_jwb_urut);
 
                 
                 // simpan kedatabase----------
@@ -349,7 +319,7 @@ dat.onreadystatechange = function () {
                 let waktunya = waktu();
                 let harinya = hari();
 
-                createTask(sekolahfix, namanya.value, kelasfix, hasilakhir, waktunya, harinya, new_jwb_urut);
+                createTask(sekolahfix, namanya.value, kelasfix, hasilakhir, waktunya, harinya);
 
                 let namainput = document.querySelector('.nama');
                 namainput.innerText = namanya.value;
@@ -378,9 +348,12 @@ dat.onreadystatechange = function () {
                 let datanya = document.querySelector('.dataaa');
                 datanya.className = datanya.className.replace('hilang', '');
 
-                if(hasilakhir<=69){
+                if(hasilakhir<=75){
                     let ulang = document.getElementById("ulang");
                     ulang.className = ulang.className.replace("hilang","");
+                } else if (hasilakhir>=75){
+                    let mtrslnjt = document.getElementById("mtrslnjt");
+                    mtrslnjt.className = mtrslnjt.className.replace("hilang","");
                 }
             } else {
                 alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
@@ -428,7 +401,7 @@ function hari() {
 }
 
 
-function createTask(sekolah, nama, kelas, nilai, waktunya, hari,jwb) {
+function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
     counter += 1;
     var task = {
         id: counter,
@@ -437,8 +410,7 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari,jwb) {
         kelas: kelas,
         nilai: nilai,
         waktu: waktunya,
-        hari: hari,
-        jawabannya: jwb
+        hari: hari
     }
 
     let db = firebase.database().ref("evaluasi/" + counter);
@@ -464,3 +436,95 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari,jwb) {
     
 // })
 
+let showtime = document.querySelector("#time")
+let mulaiwaktu = 40;
+let detik = 0;
+
+function waktumundur() {
+    setTimeout(waktumundur, 1000);
+    detik = detik < 10 ? '0' + detik : detik ;
+    showtime.innerHTML = `${mulaiwaktu} : ${detik}`
+    detik--;
+
+    if (detik < 0) {
+        detik = 59;
+        mulaiwaktu--;
+    }
+
+    if (mulaiwaktu < 0 ) {
+        mulaiwaktu = 0;
+        detik = 0;
+    }
+    if (mulaiwaktu===0 && detik===0) {
+            
+        // array kunci
+        // console.log(jwbs);
+        hasilakhir = 0;
+        benarr = 0;
+        salahh = jwbs.length;
+
+        for (let i = 0; i < jwbs.length; i++) {
+            let a = i+1;
+            let namaradio = document.getElementsByName("radio"+a);
+            let checked = false;
+            for (let j = 0; j < namaradio.length; j++) {
+                if(namaradio[j].checked){
+                    checked = true;
+                    if(namaradio[j].value == jwbs[i]){
+                        hasilakhir = hasilakhir + 10;
+                        benarr = benarr + 1;
+                    } else {
+                        hasilakhir = hasilakhir;
+                    }
+                }
+            }
+        }
+
+        
+        // simpan kedatabase----------
+        console.log(namanya.value);
+        console.log(sekolahfix);
+        console.log(kelasfix);
+        console.log(hasilakhir);
+        let waktunya = waktu();
+        let harinya = hari();
+
+        createTask(sekolahfix, namanya.value, kelasfix, hasilakhir, waktunya, harinya);
+
+        let namainput = document.querySelector('.nama');
+        namainput.innerText = namanya.value;
+
+        let sekolahinput = document.querySelector('.sekolah');
+        sekolahinput.innerText = sekolahfix;
+
+        let kelasinput = document.querySelector('.kelas');
+        kelasinput.innerText = kelasfix;
+
+        let hariinput = document.querySelector('.hari');
+        hariinput.innerText = harinya;
+
+        let waktuinput = document.querySelector('.waktu');
+        waktuinput.innerText = waktunya;
+
+        let hasillinput = document.querySelector('.hasill');
+        hasillinput.innerText = hasilakhir;
+
+        let kirihilang = document.querySelector('.kiri');
+        kirihilang.className += ' hilang';
+
+        let kananhilang = document.querySelector('.kanan');
+        kananhilang.className += ' hilang';
+
+        let datanya = document.querySelector('.dataaa');
+        datanya.className = datanya.className.replace('hilang', '');
+
+        if(hasilakhir<=75){
+            let ulang = document.getElementById("ulang");
+            ulang.className = ulang.className.replace("hilang","");
+        }
+
+}  
+}
+
+
+waktumundur()

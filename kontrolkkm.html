@@ -1,0 +1,225 @@
+<html>
+<head>
+    <link rel="icon" href="pinsil.png">
+    <title>Menu Guru</title>
+    <link rel="stylesheet" href="kkmcss.css">
+    <img class="judul" src="judulfoto.png"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <header class="headerhalamankontrol"></header>
+<section>
+  <ul>
+    <li><a class="active" <a href="MenuGuru.html">Halaman Utama&nbsp;&nbsp;&nbsp;&nbsp;<img src="homecyan.png"width='35px' height='35px'></a></li>
+  </ul>
+  <article>
+    <center>
+        <br><br><br><br>
+       
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengenal Tabel HTML</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">Nomor</th>
+
+        </tr>
+        <tr>
+            <th>Kuis/Evaluasi</th>
+            <th>KKM saat ini</th>
+            <th>Ubah KKM</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Kuis 1</td>
+            <td><div class="kkmKuis1"></div></td>
+            <td><div class="containerr">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#kkm1">Edit KKM</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Kuis 2</td>
+            <td><div class="kkmKuis2"></div></td>
+            <td><div class="containerr">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#kkm2">Edit KKM</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Kuis 3</td>
+            <td><div class="kkmKuis3"></div></td>
+            <td><div class="containerr">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#kkm3">Edit KKM</button>
+            </td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Kuis 4</td>
+            <td><div class="kkmKuis4"></div></td>
+            <td><div class="containerr">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#kkm4">Edit KKM</button>
+            </td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Evaluasi</td>
+            <td><div class="kkmEvaluasi"></div></td>
+            <td><div class="containerr">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#kkm5">Edit KKM</button>
+            </td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>
+        </div>
+
+    </center>
+  
+</article>
+</section>
+<!-- <footer>
+  <div id="footer">
+    <a href="MenuGuru.html"><img src="Kembali.png" style="height: 60px;width: 220px;"></a>
+  </div>
+</footer> -->
+  <!-- Modal -->
+  <div class="modal fade" id="kkm1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Masukkan Nilai KKM</h4>
+        </div>
+        <div class="modal-body">
+            <input type="text" class="KKM1" id="KKM1">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" onclick="setKKM1();" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="kkm2" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Masukkan Nilai KKM</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="KKM2" id="KKM2">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" onclick="setKKM2();" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="kkm3" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Masukkan Nilai KKM</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="KKM3" id="KKM3">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" onclick="setKKM3();" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="kkm4" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Masukkan Nilai KKM</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="KKM4" id="KKM4">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" onclick="setKKM4();" data-dismiss="modal">OK</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+     
+    <!-- Modal -->
+    <div class="modal fade" id="kkm5" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Masukkan Nilai KKM</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="KKM5" id="KKM5">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" onclick="setKKM5();" data-dismiss="modal">Simpan</button>
+            </div>
+          </div>
+          
+</div>
+ 
+
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+<script src="kkm.js"></script>
+</body>
+</html>

@@ -9,6 +9,19 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+  const db = firebase.database();
+  const dbkkm = db.ref('db_kkm/').on('value', kkmSuccess, handleError)
+  
+  let loop1;
+  let kkm1 = 0;
+  
+  function kkmSuccess(items1) {
+    kkm1 = items1.val()[0]['kkm'];
+  }
+  
+  function handleError(error) {
+    console.log(error);
+  }
 
 
 
@@ -352,14 +365,17 @@ dat.onreadystatechange = function () {
                 let datanya = document.querySelector('.dataaa');
                 datanya.className = datanya.className.replace('hilang', '');
 
-                if(hasilakhir<=75){
+                if(hasilakhir<=kkm4){
                     let ulang = document.getElementById("ulang");
                     ulang.className = ulang.className.replace("hilang","");
                 }
-            } else {
-                alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
-            }
-            
+                else if(hasilakhir>=kkm4){
+                    let materiselanjut = document.getElementById("materiselanjut");
+                    materiselanjut.className = materiselanjut.className.replace("hilang","");
+                }
+                } else {
+                    alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
+                }  
         })
 
 
@@ -438,3 +454,96 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
     
 // })
 
+let showtime = document.querySelector("#time")
+        let mulaiwaktu = 40;
+        let detik = 0;
+
+        function waktumundur() {
+            setTimeout(waktumundur, 1000);
+            detik = detik < 10 ? '0' + detik : detik ;
+            showtime.innerHTML = `${mulaiwaktu} : ${detik}`
+            detik--;
+
+            if (detik < 0) {
+                detik = 59;
+                mulaiwaktu--;
+            }
+
+            if (mulaiwaktu < 0 ) {
+                mulaiwaktu = 0;
+                detik = 0;
+            }
+
+            if (mulaiwaktu===0 && detik===0) {
+            
+                    // array kunci
+                    // console.log(jwbs);
+                    hasilakhir = 0;
+                    benarr = 0;
+                    salahh = jwbs.length;
+
+                    for (let i = 0; i < jwbs.length; i++) {
+                        let a = i+1;
+                        let namaradio = document.getElementsByName("radio"+a);
+                        let checked = false;
+                        for (let j = 0; j < namaradio.length; j++) {
+                            if(namaradio[j].checked){
+                                checked = true;
+                                if(namaradio[j].value == jwbs[i]){
+                                    hasilakhir = hasilakhir + 10;
+                                    benarr = benarr + 1;
+                                } else {
+                                    hasilakhir = hasilakhir;
+                                }
+                            }
+                        }
+                    }
+
+                    
+                    // simpan kedatabase----------
+                    console.log(namanya.value);
+                    console.log(sekolahfix);
+                    console.log(kelasfix);
+                    console.log(hasilakhir);
+                    let waktunya = waktu();
+                    let harinya = hari();
+
+                    createTask(sekolahfix, namanya.value, kelasfix, hasilakhir, waktunya, harinya);
+
+                    let namainput = document.querySelector('.nama');
+                    namainput.innerText = namanya.value;
+
+                    let sekolahinput = document.querySelector('.sekolah');
+                    sekolahinput.innerText = sekolahfix;
+
+                    let kelasinput = document.querySelector('.kelas');
+                    kelasinput.innerText = kelasfix;
+
+                    let hariinput = document.querySelector('.hari');
+                    hariinput.innerText = harinya;
+
+                    let waktuinput = document.querySelector('.waktu');
+                    waktuinput.innerText = waktunya;
+
+                    let hasillinput = document.querySelector('.hasill');
+                    hasillinput.innerText = hasilakhir;
+
+                    let kirihilang = document.querySelector('.kiri');
+                    kirihilang.className += ' hilang';
+
+                    let kananhilang = document.querySelector('.kanan');
+                    kananhilang.className += ' hilang';
+
+                    let datanya = document.querySelector('.dataaa');
+                    datanya.className = datanya.className.replace('hilang', '');
+
+                    if(hasilakhir<=kkm4){
+                        let ulang = document.getElementById("ulang");
+                        ulang.className = ulang.className.replace("hilang","");
+                    }
+
+            }
+        }
+
+		
+        waktumundur()

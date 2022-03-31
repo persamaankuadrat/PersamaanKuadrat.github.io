@@ -233,6 +233,18 @@
     margin-left: 350px;
   }
 
+  .pembahasan{
+    margin-right: 12px;
+    margin: 15px;
+    padding: 30px;
+    width: 50%;
+    height: auto;
+    background-color: #aaeaf0;
+    border: 5px solid #2f88a3;
+    overflow: auto;
+    font-family: 'Bookman Old Style', serif;
+    border-radius: 8px;
+  }
 
 .isimateri{
   background-color: #DAA520; /*ISI MATERI SUB BAB*/
@@ -491,24 +503,15 @@
   }
   .pertanyaan{
     width: 988px;
-    height: 430px;
+    height: 1120px;
     border: dotted #357030 5px;
     border-radius: 8px;
     padding: 14px;
     background-color: #ceffca;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: -6px;  
+  
   }
-  .pertanyaansub1{
-    width: 988px;
-    height: 580px;
-    border: dotted #357030 5px;
-    border-radius: 8px;
-    padding: 14px;
-    background-color: #ceffca;
-    font-family: 'Times New Roman', Times, serif;
-   
-  }
+
   .marimencobasubsub1{
     width: 988px;
     height: 1380px;

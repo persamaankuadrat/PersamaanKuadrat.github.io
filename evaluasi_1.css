@@ -20,6 +20,15 @@
 }
 
 
+.waktuu {
+  background-color: #52e766;
+  font-size: 70px;
+  border-radius: 40px;
+}
+
+.waktu {
+  font-size: 24px;
+}
 
 body{
 background-size: 35%;
@@ -297,7 +306,7 @@ outline-offset: -20px; */
 }
 
 .disable {
-background-color: rgb(133, 133, 133) !important;
+background-color: rgb(126, 223, 126) !important;
 color: rgb(37, 37, 37);
 cursor: default !important;
 }

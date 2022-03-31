@@ -9,6 +9,16 @@
   display: block;
 }
 
+.waktuu {
+    background-color: #52e766;
+    font-size: 50px;
+    border-radius: 40px;
+  }
+  
+.waktu {
+    font-size: 24px;
+  }
+
 .full {
   position: fixed;
   z-index: 5;
@@ -54,7 +64,13 @@ label {
     height: 25px;
     padding: 0px 10px;
 }
-
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 20px;
+    color: whitesmoke;
+}
 .lanjut, .tmblUlang{
     background-color: #26a550;
     color: white;

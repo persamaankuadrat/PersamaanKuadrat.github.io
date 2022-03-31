@@ -114,7 +114,7 @@
                             <br>
                             <br>
                             <br>
-							<a href="../titikacuan.html" class="kembali">
+							<a href="apersepsi.html" class="kembali">
 								Kembali Ke Materi
 							</a>
                             <div class="lanjut">
@@ -1236,6 +1236,9 @@
 				</div>
 
 				<div class="selesai">SELESAI</div>
+				<br>
+                <center> <div class="waktuu" id="time">00:00</div></center>
+
 			</div>
 			<!-- BATAS KONTEN KANAN-->
 
@@ -1316,11 +1319,22 @@
 							</tr>
 						</table>
 						<br>
-						<br>
-						<p>
-							Terima kasih telah menggunakam aplikasi pembelajaran sistem koordinat, mohon untuk mengisikan angket persepsi anda terhadap aplikasi dengan mengklik link di bawah ini
-						</p><br>
-						<a href="">Link Angket Persepsi Siswa</a></div>
+						<div id="ulang" class="ket_ulang hilang">
+							Jika nilaimu masih kurang dari 75, silahkan tekan tombol "Ulang" di bawah ini untuk remedial &nbsp;
+							<div class="tmblUlang">
+								<a href="evaluasi.html">Ulang</a></div> <br><br>
+							Jika ingin kembali memahami materi kembali tekan tombol "Ulang Materi" dibawah ini
+							<div class="tmblUlang">
+								<a href="apersepsi.html">Ulang Materi</a></div>
+						</div><br>
+
+						<div id="materiselanjut" class="ket_ulang hilang" style="color: black;">
+							<b padding: 3px;"> Nilai anda sudah lebih dari atau sama dengan
+							 75</b>, silahkan tekan tombol "<b>Kembali ke materi</b>" dibawah ini untuk mempelajari materi selanjutnya. <br>
+							 <div class="tmblUlang" style="font-size: 18px;">
+								<a href="apersepsi.html">Kembali ke materi</a>
+							</div>
+						</div>
 					</center>
 				</div>
 			</div>
@@ -1333,7 +1347,7 @@
 	<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
 	<script src="evaluasi.js"></script>
-	<script src="dataevaluasi2.js"></script>
+	<script src="dataevaluasi.js"></script>
 
     <script>
 		var task = firebase.database().ref("kontrolevaluasi/55555");

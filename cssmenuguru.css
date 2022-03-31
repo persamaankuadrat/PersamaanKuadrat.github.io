@@ -32,7 +32,7 @@ th, td {
   }
 
 .isi{
-width: 80%;
+width: 70%;
 height:500px;
 background-color: Aquamarine;
 float: right;
@@ -45,6 +45,37 @@ background-color:#827717;
 margin-top: 327px;
 text-align: center;
 }
+
+.active{
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #215538;
+  }
+  li {
+    float: left;
+    margin-left: 15px;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 3px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .text{
+    color: white;
+    font-size: 20px;
+  }
 
 .judul{
 	margin-left:auto;margin-right:auto;display:block;width:100%;
@@ -76,7 +107,7 @@ text-align: center;
 		border: 1px solid black;
 		line-height: 50px;
 		margin: auto;
-		margin-left: 85px;
+		margin-left: -90px;
 		margin-top: 56px;
 		padding: 15px;
 		border-radius: 5px;
@@ -90,17 +121,24 @@ text-align: center;
 	height:400px;
 	background-color: Aquamarine;
 	float:left;
-	margin-left: 200px;
+	margin-left: 273px;
 }
 	
 .kontrol{
-	width:33%;
+	width:20%;
 	height:400px;
 	background-color: Aquamarine;
 	float:left;
-	margin-left: 100px;
+	margin-left: -84px;
 }	
 
+.kontrolkkm{
+	width:20%;
+	height:400px;
+	background-color: Aquamarine;
+	float:right;
+	margin-right: 80px;
+}	
 
 .imgkikd{
 	transition:0.5s;}
