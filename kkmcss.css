@@ -16,6 +16,9 @@
 
 .table, th, td {
     border: 1px solid black;
+    text-align: center;
+    width: -15px;
+    padding: 11px;
 }
 th, td {
     padding: 10px;
@@ -23,8 +26,7 @@ th, td {
 th {
     background-color: rgb(19, 110, 170);
     color: rgb(136, 18, 18);
-    text-align: center;
-    width: -15px;
+
 }
 tr:hover {background-color: #e9fc41;}
 

@@ -534,10 +534,14 @@ function waktumundur() {
             let ulang = document.getElementById("ulang");
             ulang.className = ulang.className.replace("hilang","");
         }
-        else if (hasilakhir>=kk5){
+        else if (hasilakhir>=kkm5){
             let materiselanjut = document.getElementById("materiselanjut");
             materiselanjut.className = materiselanjut.className.replace("hilang","");
         }
+        else
+        {
+            alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
+        }    
     } 
 }
 

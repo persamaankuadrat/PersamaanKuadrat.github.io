@@ -378,9 +378,6 @@ dat.onreadystatechange = function () {
             
         })
 
-
-        
-
     }
 
     MathJax.typeset();
@@ -540,6 +537,13 @@ let showtime = document.querySelector("#time")
                     if(hasilakhir<=kkm1){
                         let ulang = document.getElementById("ulang");
                         ulang.className = ulang.className.replace("hilang","");
+                    }
+                    else if(hasilakhir>=kkm1){
+                        let materiselanjut = document.getElementById("materiselanjut");
+                        materiselanjut.className = materiselanjut.className.replace("hilang","");
+                    }
+                    else {
+                        alert('Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !');
                     }
 
             }
