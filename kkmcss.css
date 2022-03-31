@@ -1,3 +1,14 @@
+.judul{
+	margin-left:auto;margin-right:auto;display:block;width:100%;
+	}
+
+
+
+
+
+
+
+
 .table {
     border-collapse: collapse;
     width: 100%;
@@ -12,6 +23,8 @@ th, td {
 th {
     background-color: rgb(19, 110, 170);
     color: rgb(136, 18, 18);
+    text-align: center;
+    width: -15px;
 }
 tr:hover {background-color: #e9fc41;}
 
@@ -26,6 +39,7 @@ body {
   ul {
     list-style-type: none;
     margin: 0;
+    width: 1366px;
     padding: 0;
     overflow: hidden;
     background-color: #215538;

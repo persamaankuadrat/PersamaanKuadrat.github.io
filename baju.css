@@ -60,10 +60,11 @@ background-color:#827717;
 { background-color: rgb(41, 124, 120)}
 
 .kikd{
-	width:33%;
+	width:28%;
 	height:400px;
 	background-color: Aquamarine;
 	float:left;
+	margin-left: 43px;
 }
 	
 .materi{
@@ -71,13 +72,15 @@ background-color:#827717;
 	height:400px;
 	background-color: Aquamarine;
 	float:left;
+	margin-left: 54px;
 }	
 
 .evaluasi{
-	width:33%;
+	width:26%;
 	height:400px;
 	background-color: Aquamarine;
 	float:left;
+	margin-left: -7px;
 }	
 .imgkikd{
 	transition:0.5s;}
