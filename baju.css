@@ -1,5 +1,5 @@
 body {
-	background-color:Aquamarine;
+	background-color: #caf7d3;
 	margin:0px;
 }
 
@@ -17,15 +17,19 @@ background-color: Aquamarine;
 float: right;
 }
 
-footer{
-width: 100%;
-height: 70px;
-background-color:#827717;
-}
+footer {
+    background-color: #2c6e49;
+    padding: 0px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+	margin-top: 428px;
+  }
 
 .judul{
 	margin-left:auto;margin-right:auto;display:block;width:100%;
 	}
+
 .a { 
 	text-decoration: none;
 	color: black;
@@ -40,47 +44,64 @@ background-color:#827717;
 }
 	.a:hover
 	{ background-color: rgb(60, 218, 204)}
-	
+
 .aa {
 	text-decoration: none;
-	color: black;
-	background-color: orange;
-	font-family: arial;
+	color: #fefee3;
+	background-color: #4c956c;
+	font-family: cursive;
 	font-weight: bold;
-	border: 1px solid black;
+	font-size: 22px;
+	border: 1px solid #fefee3;
 	line-height: 50px;
 	margin: auto;
-	margin-left: 85px;
+	margin-left: 94px;
 	margin-top: 56px;
-	padding: 15px;
+	padding: 10px;
 	border-radius: 5px;
 	float: left;
 }
 .aa:hover
-{ background-color: rgb(41, 124, 120)}
+{ 	background-color: rgb(252, 241, 85);
+	font-family: cursive;
+	color: black;
+	font-size: 22px;
+
+}
+
+
 
 .kikd{
-	width:28%;
-	height:400px;
-	background-color: Aquamarine;
+	width:25%;
+	height:330px;
+	background-color: #caf7d3;
 	float:left;
-	margin-left: 43px;
+	margin-left: 69px;
 }
-	
+.copyright {
+font-size: 50px;
+	padding: 5px;
+  }
+  
+.kontak {
+	padding: 5px;
+
+  }
 .materi{
-	width:33%;
-	height:400px;
-	background-color: Aquamarine;
+	width:26%;
+	height:330px;
+	background-color: #caf7d3;
 	float:left;
-	margin-left: 54px;
+	margin-left: 70px;
+	margin-top: 1px;
 }	
 
 .evaluasi{
-	width:26%;
-	height:400px;
-	background-color: Aquamarine;
+	width:23%;
+	height:330px;
+	background-color: #caf7d3;
 	float:left;
-	margin-left: -7px;
+	margin-left: 62px;
 }	
 .imgkikd{
 	transition:0.5s;}
