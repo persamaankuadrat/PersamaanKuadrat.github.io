@@ -291,6 +291,9 @@ dat.onreadystatechange = function () {
 
         //cek jawaban
         let selesai = document.querySelector(".selesai");
+        let pil_user = [];
+        new_jwb_urut = [];
+        new_jwb_urut_no = [];
 
         selesai.addEventListener("click", function(){
             let sarat = 0;
@@ -317,6 +320,7 @@ dat.onreadystatechange = function () {
                     for (let j = 0; j < namaradio.length; j++) {
                         if(namaradio[j].checked){
                             checked = true;
+                            pil_user.push(namaradio[j].value);
                             if(namaradio[j].value == jwbs[i]){
                                 hasilakhir = hasilakhir + 10;
                                 benarr = benarr + 1;
@@ -326,6 +330,16 @@ dat.onreadystatechange = function () {
                         }
                     }
                 }
+                for (let i = 0; i < cek.length; i++) {
+                    for (let j = 0; j < cek.length; j++){
+                        if (i == cek[j]) {
+                            new_jwb_urut.push(pil_user[j]);
+                            new_jwb_urut_no.push(cek[j]);
+                        }
+                    }
+                }
+                console.log("jwb_user_urut_no :" + new_jwb_urut_no);
+                console.log("jwb_user_urut :" + new_jwb_urut);
 
                 
                 // simpan kedatabase----------
@@ -336,8 +350,8 @@ dat.onreadystatechange = function () {
                 let waktunya = waktu();
                 let harinya = hari();
 
-                createTask(sekolahfix, namanya.value, kelasfix, hasilakhir, waktunya, harinya);
-
+                createTask(sekolahfix, namanya.value, kelasfix, hasilakhir, waktunya, harinya, new_jwb_urut);
+                
                 let namainput = document.querySelector('.nama');
                 namainput.innerText = namanya.value;
 
@@ -419,7 +433,7 @@ function hari() {
 }
 
 
-function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
+function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
     counter += 1;
     var task = {
         id: counter,
@@ -428,7 +442,8 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
         kelas: kelas,
         nilai: nilai,
         waktu: waktunya,
-        hari: hari
+        hari: hari,
+        jawabannya: jwb
     }
 
     let db = firebase.database().ref("kuis2/" + counter);

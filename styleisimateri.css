@@ -37,7 +37,7 @@
     background: #caf7d3;
     padding: 20px;
     overflow-y: auto;
-    padding: 20px 10px 20px 40px;
+    padding: 30px 10px 20px 10px;
   }
   
   .nav a {
@@ -102,12 +102,12 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: 1px solid #fefee3;
     color: #fefee3;
-    padding: 8px 32px;
+    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
-    width: 90%;
+    width: 99%;
     display: block;
   }
   
@@ -257,14 +257,9 @@ a {
   background-color: #d68c45;
   border: none;
   color: black;
-  padding: 7px 10px;
-  text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 19px;
   cursor: pointer;
-  border-radius: 8px;
-  font-family: cursive;
 }
 
 .home:hover {background-color: #ffc9b9}
@@ -849,3 +844,42 @@ img {vertical-align: middle;}
     display: inline !important;
     font-style:italic;
   }
+/* cara membuat home */
+
+  .btn2 {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .btn2:hover, .btn2:focus {
+    color: rgb(14, 14, 14);
+    outline: 0;
+  }
+  .third {
+    border-color: #d68c45;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #d68c45 inset, 0 0 0 0 #d68c45;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #d68c45 inset, 0 0 10px 4px #d68c45;
+  }
+/* sampai sini */

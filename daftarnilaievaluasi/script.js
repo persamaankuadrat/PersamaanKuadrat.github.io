@@ -1,4 +1,3 @@
-// menguhubungkan ke firebase
 var firebaseConfig = {
     apiKey: "AIzaSyBfwXa95Cbm2njpH4tJ-F0K4_ZHcNd8ySg",
     authDomain: "yulia-91249.firebaseapp.com",
@@ -7,7 +6,7 @@ var firebaseConfig = {
     messagingSenderId: "595660344340",
     appId: "1:595660344340:web:04c0e93d76fc1855882b01"
   };
-
+  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
 

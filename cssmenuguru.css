@@ -98,7 +98,7 @@ text-align: center;
 	.a:hover
 	{ background-color: yellow}
 	
-	.aa { 
+	.a2 { 
 		text-decoration: none;
 		color: black;
 		background-color: orange;
@@ -107,38 +107,35 @@ text-align: center;
 		border: 1px solid black;
 		line-height: 50px;
 		margin: auto;
-		margin-left: -90px;
+		margin-left: 72px;
 		margin-top: 56px;
 		padding: 15px;
 		border-radius: 5px;
 		float: left;
 	}
-		.aa:hover
-		{ background-color: yellow}
-		
-.daftar{
-	width:33%;
-	height:400px;
-	background-color: Aquamarine;
-	float:left;
-	margin-left: 273px;
-}
+		.a2:hover
+		{ background-color: rgb(8, 129, 64)
+		}
+.a3 { 
+			text-decoration: none;
+			color: black;
+			background-color: orange;
+			font-family: arial;
+			font-weight: bold;
+			border: 1px solid black;
+			line-height: 50px;
+			margin: auto;
+			margin-left: 273px;
+			margin-top: 56px;
+			padding: 25px;
+			border-radius: 5px;
+			float: left;
+		}
+.a3:hover
+			{ background-color: rgb(8, 129, 64)
+			}
+				
 	
-.kontrol{
-	width:20%;
-	height:400px;
-	background-color: Aquamarine;
-	float:left;
-	margin-left: -84px;
-}	
-
-.kontrolkkm{
-	width:20%;
-	height:400px;
-	background-color: Aquamarine;
-	float:right;
-	margin-right: 80px;
-}	
 
 .imgkikd{
 	transition:0.5s;}
@@ -158,8 +155,8 @@ text-align: center;
 	transition:0.5s;
 }
 .imgevaluasi:hover{
-	width:230px;
-	height:230px;
+	width:250px;
+	height:250px;
 	transition:0.5s;
 }
 	

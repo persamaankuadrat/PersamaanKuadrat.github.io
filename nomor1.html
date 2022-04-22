@@ -8,14 +8,14 @@
   </head>
   <body>
     <div class="Pertanyaan">
-        <img src="pertanyaan.png" width="940" height="70" class="gmb"><br>
-        <button class="isimateri petunjuk"></button><br>
-        <div id="petunjuk" >
+        <img src="pertanyaan.png" width="940" height="100" class="gmb"><br>
+        <!-- <button class="isimateri"></button><br> -->
+        <div id="isipetunjuk" class="">
             <br>
-            <b style="color: rgb(182, 172, 134);"> Cara menjawab soal : </b><br>
-            <ol style="color: rgb(207, 201, 178);">
-              <li>Pertama hitung terlebih dahulu jawabanmu.</li><br>
-              <li>Setelah yakin dengan jawabanmu selanjutnya klik salah satu tombol.</li><br>
+            <b style="color: rgb(250, 243, 243);"> Cara menjawab soal : </b><br>
+            <ol style="color: rgb(244, 239, 239);">
+              <li>Pertama tentukan terlebih dahulu jawabanmu.</li><br>
+              <li>Setelah yakin dengan jawabanmu selanjutnya klik atau tekan salah satu tombol a, b, atau c.</li><br>
               <li>Jika jawabanmu salah, maka ada bantuan berupa rumus.</li><br>
               <li>Jika jawabanmu benar, maka akan dimunculkan alur pengerjaan jawaban yang benar.</li>
             </ol>
@@ -24,69 +24,59 @@
 <br>
 
 
-      <p>1.) Dari persamaan kuadrat \[2x^{2} + 3x - 2 = 0\]. Tentukan variabel, koefisien, dan konstantanya. Pilih jawabanmu dengan menekan salah satu tombol.</p>
+<div class="pilihan1">
+  <form name="form">
+  1) Mari pecahkan masalah berikut tentukan variabel, koefisien, dan konstanta dari persamaan kuadrat \[2x^{2} + 3x - 2 = 0\] 
+     dengan menekan salah satu tombol berikut :<br><br>
+  a) Variabel dari \[2x^{2} + 3x - 2 = 0\] adalah...... <br>
+  <br>
+  <div class="qselections">
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek1()" >A</button> \[x^{2} , x\] <br> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek2()" >B</button> \[2 , 3\] <br> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek3()" >C</button> \[-2\]
+  <br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;Jawaban anda :<input type="text" name="jawaban" size="1">
+  </form1>
+  <br>
+  <!-- <button type="button" onclick="cekjawaban()" >cek jawaban</button> -->
+  <h4 id="tampil"></h4>
 
-      <center><p>Jawab: </p>  </center>
+</div>
 
-          Variabel dari persamaan kuadrat \[2x^{2} + 3x - 2 = 0\] yaitu: <br>
-          <input onclick="checkbenar()"
-          type="radio" id="penyelesaian" name="gender" value="penyelesaian">
-          <label for="penyelesaian">\[x^2 , x\]</label>
-          <br>
-          <input onclick="checksalah()"
-          type="radio" id="penyelesaian" name="gender" value="penyelesaian">
-          <label for="penyelesaian">\[2, 3\]</label>
-          <br>
-          <input onclick="checksalah()"
-          type="radio" id="penyelesaian" name="gender" value="penyelesaian">
-          <label for="penyelesaian">\[-2\]</label>
-          <br><br><br>
+<div class="pilihan2">
+  <form name="form">
+  b) Koefisien dari \[2x^{2} + 3x - 2 = 0\] adalah...... <br>
+  <br>
+  <div class="qselections">
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek11()" >A</button> \[x^{2} , x\] <br> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek22()" >B</button> \[2 , 3\] <br> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek33()" >C</button> \[-2\]
+  <br><br>
+  Jawaban anda :<input type="text" name="jawaban2" size="1">
+  </form1>
+  <br>
+  <!-- <button type="button" onclick="cekjawaban2()" >cek jawaban</button> -->
+  <h4 id="tampil2"></h4>
 
-          <center>
-            <div class="pembahasan1">
-              <p id="jawaban1"></p> 
-              </div></center>
+</div>
 <br><br><br>
-              Koefisien dari persamaan kuadrat \[2x^{2} + 3x - 2 = 0\] yaitu: <br>
-              <input onclick="checksalahh()"
-              type="radio" id="penyelesaian" name="gender" value="penyelesaian">
-              <label for="penyelesaian">\[x^2 , x\]</label>
-              <br>
-              <input onclick="checkbenarr()"
-              type="radio" id="penyelesaian" name="gender" value="penyelesaian">
-              <label for="penyelesaian">\[2, 3\]</label>
-              <br>
-              <input onclick="checksalahh()"
-              type="radio" id="penyelesaian" name="gender" value="penyelesaian">
-              <label for="penyelesaian">\[-2\]</label>
-              <br><br><br>
-    
-              <center>
-                <div class="pembahasan2">
-                  <p id="jawaban2"></p> 
-                  </div></center>
-                  <br><br><br>
-                  Konstanta dari persamaan kuadrat \[2x^{2} + 3x - 2 = 0\] yaitu:  <br>
-                  <input onclick="checksalahhh()"
-                  type="radio" id="penyelesaian" name="gender" value="penyelesaian">
-                  <label for="penyelesaian">\[x^2 , x\]</label>
-                  <br>
-                  <input onclick="checksalahhh()"
-                  type="radio" id="penyelesaian" name="gender" value="penyelesaian">
-                  <label for="penyelesaian">\[2, 3\]</label>
-                  <br>
-                  <input onclick="checkbenarrr()"
-                  type="radio" id="penyelesaian" name="gender" value="penyelesaian">
-                  <label for="penyelesaian">\[-2\]</label>
-                  <br><br><br>
-        
-                  <center>
-                    <div class="pembahasan3">
-                      <p id="jawaban3"></p> 
-                      </div></center>
+<div class="pilihan3">
+  <form name="form">
+  c) Konstanta dari \[2x^{2} + 3x - 2 = 0\] adalah...... <br>
+  <br>
+  <div class="qselections">
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek111()" >A</button> \[x^{2} , x\] <br> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek222()" >B</button> \[2 , 3\] <br> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek333()" >C</button> \[-2\]
+  <br><br>
+  Jawaban anda :<input type="text" name="jawaban3" size="1">
+  </form1>
+  <br>
+  <center><button class="btn2 third" type="button" onclick="cekjawaban3()" >cek jawaban</button></center>
+  <h4 id="tampil3"></h4>
 
-
-
+</div>
+<br><br><br>
   </body>
  <!--penutup div nomor satu-->
 </div>
