@@ -956,37 +956,40 @@ for (let i=0; i<jawaban.length; i++){
 
 function checksalah() {
   console.log("salah");
-  document.getElementById("jawaban").innerHTML="<span style='color: red';>Jawaban Salah</span>";
+  document.getElementById("jawaban").innerHTML="<span style='color: red';><h2>Maaf Jawaban Mu Masih Salah</h2></span>";
 }
 function checkbenar() {
   console.log("benar");
-  document.getElementById("jawaban").innerHTML="<span style='color: green';>Jawaban Benar</span>";
+  document.getElementById("jawaban").innerHTML="<span style='color: green';><h2>Selamat Jawaban Mu Benar ^-^</h2>Dikarenakan jika \\[D > 0\\], maka persamaan kuadrat mempunyai 2 akar real berbeda.</span><br> Lanjutkan untuk menjawab soal berikutnya.";
   setTimeout(function (){
     document.getElementById('lanjut7').className = document.getElementById('lanjut7').className.replace('hilang','');
   }, 500)
+  MathJax.typeset();
 }
 
 function checksalahh() {
   console.log("salah");
-  document.getElementById("jawaban1").innerHTML="<span style='color: red';>Jawaban Salah</span>";
+  document.getElementById("jawaban1").innerHTML="<span style='color: red';><h2>Maaf Jawaban Mu Masih Salah</h2></span>";
 }
 function checkbenarr() {
   console.log("benar");
-  document.getElementById("jawaban1").innerHTML="<span style='color: green';>Jawaban Benar</span>";
+  document.getElementById("jawaban1").innerHTML="<span style='color: green';><h2>Selamat Jawaban Mu Benar ^-^</h2>Dikarenakan jika \\[D = 0\\], maka persamaan kuadrat mempunyai 1 akar real yang sama (kembar).</span><br> Lanjutkan untuk menjawab soal berikutnya.";
   setTimeout(function (){
     document.getElementById('lanjut14').className = document.getElementById('lanjut14').className.replace('hilang','');
   }, 500)
+  MathJax.typeset();
 }
 
 
 function checksalahhh() {
   console.log("salah");
-  document.getElementById("jawaban2").innerHTML="<span style='color: red';>Jawaban Salah</span>";
+  document.getElementById("jawaban2").innerHTML="<span style='color: red';><h2>Maaf Jawaban Mu Masih Salah</h2></span>";
 }
 function checkbenarrr() {
   console.log("benar");
-  document.getElementById("jawaban2").innerHTML="<span style='color: green';>Jawaban Benar</span>";
+  document.getElementById("jawaban2").innerHTML="<span style='color: green';><h2>Selamat Jawaban Mu Benar ^-^</h2>Dikarenakan jika \\[D < 0\\], maka persamaan kuadrat tidak mempunyai akar real.</span>";
   // setTimeout(function (){
   //   document.getElementById('lanjut14').className = document.getElementById('lanjut14').className.replace('hilang','');
   // }, 500)
+  MathJax.typeset();
 }

@@ -1,58 +1,54 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <html>
+  <head>
+      <link href="cssdiskriminan.css" rel="stylesheet" type="text/css" media="screen" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
-    <link href="cssdiskriminan.css" rel="stylesheet" type="text/css" media="screen" />
-    <div class="pertanyaan">
-        <img src="Pertanyaan.png" width="940" height="70" class="gmb"><br>
-        <button class="isimateri petunjuk"></button><br>
-        <div id="petunjuk" >
-            <br>
-            <b style="color: rgb(182, 172, 134);"> Cara menjawab soal : </b><br>
-            <ol style="color: rgb(207, 201, 178);">
-              <li>Pertama hitung terlebih dahulu jawabanmu.</li><br>
-              <li>Setelah yakin dengan jawabanmu selanjutnya klik salah satu tombol.</li><br>
-              <li>Jika jawabanmu salah, maka ada bantuan berupa rumus.</li><br>
-              <li>Jika jawabanmu benar, maka akan dimunculkan alur pengerjaan jawaban yang benar.</li>
-            </ol>
-          </div>
-       <br>
-
-
-           
-       <p>4.) Jenis akar dari persamaan kuadrat \4x^{2} + 10x + 11 = 0\] adalah...</p>
-              
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Silahkan jawab pertanyaan di atas dengan menekan salah satu tombol dibawah ini :</p>
+      <div class="Pertanyaan">
+          <img src="pertanyaan.png" width="940" height="100" class="gmb"><br>
+          <!-- <button class="isimateri"></button><br> -->
+          <div id="isipetunjuk" class="">
+              <br>
+              <b style="color: rgb(250, 243, 243);"> Cara menjawab soal : </b><br>
+              <ol style="color: rgb(244, 239, 239);">
+                <li>Pertama tentukan terlebih dahulu jawabanmu.</li><br>
+                <li>Setelah yakin dengan jawabanmu selanjutnya klik atau tekan salah satu tombol a, b, atau c.</li><br>
+                <li>Jika jawabanmu salah, maka ada bantuan berupa rumus.</li><br>
+                <li>Jika jawabanmu benar, maka akan dimunculkan alur pengerjaan jawaban yang benar.</li>
+              </ol>
+            </div>
+    
+  <br>
   
-                      <input onclick="checksalah()"
-                      type="radio" id="salah" name="gender" value="salah">
-                      <label for="salah">2 akar real berbeda</label>
-                      <br>
   
-                      <input onclick="checksalah()"
-                      type="radio" id="salah" name="gender" value="salah">
-                      <label for="salah">1 akar real yang sama (kembar)</label>
-                      <br>
+  <div class="pilihan1">
+    <form name="form">
+    4) Jenis akar dari persamaan kuadrat \[4x^{2} + 10x + 11 = 0\] adalah...... <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Silahkan jawab pertanyaan di atas dengan menekan salah satu tombol dibawah ini !<br><br>
   
-                      <input onclick="checkbenar()"
-                      type="radio" id="benar" name="gender" value="benar">
-                      <label for="benar">Tidak mempunyai akar real</label>
-                      <br>
-
-                      <center>
-                      <div class="pembahasan">
-                        <p id="jawaban"></p> 
-                        </div></center>
-                  </p>
-                 
-      
-  <!--penutup div nomor satu-->
+    <div class="qselections">
+      &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek1()" >A</button> 2 akar real berbeda <br> <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek2()" >B</button> 1 akar real yang sama (kembar) <br> <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="cek3()" >C</button> Tidak mempunyai akar real
+  
+    <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Jawaban anda :<input type="text" name="jawaban" size="1">
+    </form1>
+    <br><br>
+    <center><button class="btn2 third" type="button" onclick="cekjawaban()" >cek jawaban</button>
+    <p id="tampil"></p></center>
+  
   </div>
-</body>
-<script src="jsno4diskriminan.js"></script>
-<script src="jskuadratsempurna.js"></script>
- </html>
+  
+  <br><br><br>
+    </body>
+   <!--penutup div nomor satu-->
+  </div>
+  <script src="jsno4diskriminan.js"></script>
+  <script src="isimateri.js"></script>
+   </html>
+  

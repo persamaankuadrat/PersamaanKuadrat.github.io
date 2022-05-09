@@ -694,8 +694,9 @@ padding: 4px;
 }
 
 .active2, .dot:hover {
-background-color: #d68c45;
-}
+  background-color: #4c956c;
+  color: #111;
+  }
 
 /* Fading animation */
 .fade {

@@ -20,15 +20,18 @@
     </div>
   </div>
 <section>
-    <ul>
-        <li><a class="active" <a href="index.html">Halaman Utama&nbsp;&nbsp;&nbsp;&nbsp;<img src="homecyan.png"width='35px' height='35px'></a></li>
-      </ul>
       <nav>
+        <a class="home btn2 third" href="index.html">
+          <img src="homered.png" width='160px' height='60px'>
+          </a><br>
+
+
         <div class="button-nav">
       <button class="bttn" button onclick="location.href='apersepsi.html'">Mengenal Persamaan Kuadrat</button>
       <button class="dropbtn dropdown-btn" onclick="ftampil()">A. Pengertian Persamaan Kuadrat
         <i class="fa fa-caret-down"></i>
       </button>
+
 
       <div class="dropdown-content dropdown-container">
         <a href="umum.html">1. Bentuk Umum</a>
@@ -83,7 +86,7 @@
       <div class="subsection">
         D. Menyusun Persamaan Kuadrat
       </div>
-      <button class="isimateri">Klik Untuk Melihat Tujuan Pembelajaran</button><br>
+      <button class="isimateri btn2 third">Klik Untuk Melihat Tujuan Pembelajaran</button><br>
       <div id="isimateri" class="hilang">
           <b> Tujuan Pembelajaran </b>
           <ol>
@@ -113,7 +116,7 @@
                                 \[x^{2} + \frac{b}{a}x + \frac{c}{a} = 0\]
                             </div></center>
                             <p>Jika kita hubungkan dengan rumus jumlah dan hasil kali akar, maka kita dapat menyusun persamaan kuadrat dengan rumus berikut ini:</p>
-                            <center> <div class="kotakfaktor4">
+                            <center> <div class="kotakfaktor3">
                                 \[x^{2} - \left ( x_{1} + x_{2} \right ) + \left (x_{1} \cdot  x_{2}  \right )\]
                             </div></center>
                             
@@ -144,25 +147,27 @@
         </div>
 <br>
 <div class="marimencoba">
-  <img src="marimencobai.png" width="300" height="70" class="gmb">
-    <p>Susunlah persamaan kuadrat berikut menggunakan rumus jumlah dan hasil kali akar, yang akar-akarnya 
-      diketahui :</p>
-      <p>a. &nbsp;&nbsp;&nbsp; \[x_{1} = 3\] &nbsp;&nbsp;dan&nbsp;&nbsp; \[x_{2} = 2\]</p>
-      <p>b. &nbsp;&nbsp;&nbsp; \[x_{1} = 2\] &nbsp;&nbsp;dan&nbsp;&nbsp; \[x_{2} = -8\]</p>
-    <br>
+  <img src="marimencoba.png" width="300" height="70" class="gmb">
+
     <center>
-      <img src="Kolom Interaktif.png"><br>
-     <button class="isimateri petunjuk">Klik Untuk Melihat Petunjuk Pengisian Soal</button><br>   
-     <div id="petunjuk" class="hilang">
+      <img src="kolominteraktif.png"><br>
+     <!-- <button class="isimateri petunjuk">Klik Untuk Melihat Petunjuk Pengisian Soal</button><br>    -->
+     <div id="isimateri" class="">
         <b>Cara menjawab soal : </b><br>
         <ol>
           <li>Tuliskan jawaban pada kolom kotak yang sudah disediakan.</li><br>
           <li>Setelah menulis jawaban pada kolom, ketuk bagian layar agar dapat melihat warna kotak.</li><br>
           <li>Jika kotak berwarna hijau maka jawabanmu benar, jika berwarna merah atau tidak berwarna sekalipun maka jawabanmu salah.</li><br>
           <li>Kolom jawaban akan berlanjut jika menjawab dengan benar.</li>
-       </ol>
+          <li>Ingat! selalu perhatikan tanda minus dalam setiap jawabanmu, harus lebih teliti untuk setiap jawaban.</li>
+      </ol>
       </div></center><br><br>
-
+      <p>Susunlah persamaan kuadrat berikut menggunakan rumus jumlah dan hasil kali akar, yang akar-akarnya 
+        diketahui :</p>
+        <p>a. &nbsp;&nbsp;&nbsp; \[x_{1} = 3\] &nbsp;&nbsp;dan&nbsp;&nbsp; \[x_{2} = 2\]</p>
+        <p>b. &nbsp;&nbsp;&nbsp; \[x_{1} = 2\] &nbsp;&nbsp;dan&nbsp;&nbsp; \[x_{2} = -8\]</p>
+      <br>
+      <center><h3>Jawab : </h3></center>
     <ol type="a">
       <li> &nbsp;&nbsp;&nbsp;
         Diketahui akar persamaan kuadrat : <br>
@@ -177,7 +182,7 @@
                 \[\Leftrightarrow\]&emsp; \[x^{2} - (\] <input type="text" class="input1" maxlength="1"> \[+\] <input type="text" class="input1" maxlength="1"> \[) + (\] <input type="text" class="input1" maxlength="1"> \[\cdot\] <input type="text" class="input1" maxlength="1"> \[) = 0\] </p>
 
                 <p class="hilang" id="lanjut3">
-                  \[\Leftrightarrow\]&emsp; \[x^{2} - \] <input type="text" class="input1" maxlength="2"> \[+\] <input type="text" class="input1" maxlength="1">  \[= 0\]</p>
+                  \[\Leftrightarrow\]&emsp; \[x^{2} - \] <input type="text" class="input1" maxlength="1"> \[x&nbsp;&nbsp; +\] <input type="text" class="input1" maxlength="1">  \[= 0\]</p>
 
                   <p class="hilang" id="lanjut4">
                     Jadi, persamaan kuadrat yang akar-akarnyan \[3\] dan \[2\] yaitu :
@@ -193,8 +198,8 @@
                               &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                   <input onclick="checksalah()"
                                     type="radio" id="berbeda" name="gender" value="berbeda">
-                                    <label for="berbeda">\[x^{2} + 5x - 6 = 0\]</label>
-                                
+                                    <label for="berbeda">\[x^{2} + 5x - 6 = 0\]</label><br>
+                                    *Untuk menjawabnya klik salah satu tombol diatas
                         <p id="jawaban"></p> 
                     </p>
 
@@ -216,7 +221,7 @@
                   \[\Leftrightarrow\]&emsp; \[x^{2} - ( \] <input type="text" class="input1" maxlength="2"> \[ ) + ( \] <input type="text" class="input1" maxlength="3">  \[ ) = 0\]</p>
 
                   <p class="hilang" id="lanjut9">
-                    \[\Leftrightarrow\]&emsp; \[x^{2} + \] <input type="text" class="input1" maxlength="2"> \[ - \] <input type="text" class="input1" maxlength="2">  \[= 0\]</p>
+                    \[\Leftrightarrow\]&emsp; \[x^{2} + \] <input type="text" class="input1" maxlength="1"> \[x - \] <input type="text" class="input1" maxlength="2">  \[= 0\]</p>
 
                   </p>
 
@@ -234,11 +239,11 @@
                               &emsp;&nbsp;&nbsp;&nbsp; &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                   <input onclick="checkbenarr()"
                                     type="radio" id="berbeda" name="gender" value="berbeda">
-                                    <label for="berbeda">\[x^{2} + 6x - 16 = 0\]</label>
-                                
+                                    <label for="berbeda">\[x^{2} + 6x - 16 = 0\]</label><br>
+                                    *Untuk menjawabnya klik salah satu tombol diatas
                         <p id="jawaban1"></p> 
                     </p>
-                    <p class="hilang" id="lanjut11">Selamat Jawabanmu Benar Semua ^_^</p>
+                    <!-- <p class="hilang" id="lanjut11">Selamat Jawabanmu Benar Semua ^_^</p> -->
       </li>
 
     </ol>
@@ -249,32 +254,32 @@
         <div class="slideshow-container">
         
         <div class="mySlides">
-          <iframe src="no1hasilkali.html" title="nomor1"  allowtransparency="true" width="1000" height="1000" frameborder="0" scrolling="no">
+          <iframe src="no1hasilkali.html" title="nomor1"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor satu-->
 
         <div class="mySlides">
-          <iframe src="no2hasilkali.html" title="nomor2"  allowtransparency="true" width="1000" height="1000" frameborder="0" scrolling="no">
+          <iframe src="no2hasilkali.html" title="nomor2"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor dua-->
 
         <div class="mySlides">
-          <iframe src="no3hasilkali.html" title="nomor3"  allowtransparency="true" width="1000" height="1000" frameborder="0" scrolling="no">
+          <iframe src="no3hasilkali.html" title="nomor3"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor tiga-->
 
         <div class="mySlides">
-          <iframe src="no4hasilkali.html" title="nomor4"  allowtransparency="true" width="1000" height="1000" frameborder="0" scrolling="no">
+          <iframe src="no4hasilkali.html" title="nomor4"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor empat-->
 
         <div class="mySlides">
-          <iframe src="no5hasilkali.html" title="nomor5"  allowtransparency="true" width="1000" height="1000" frameborder="0" scrolling="no">
+          <iframe src="no5hasilkali.html" title="nomor5"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor lima-->
         
 </div>
- <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br> <br><br><br><br>
+ <br><br><br><br> <br><br><br><br> <br><br><br><br> 
           
           <div style="text-align:center" class="tempatnomor">
            <b> Nomor Soal: </b><br> 

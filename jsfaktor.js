@@ -372,6 +372,8 @@ for (let i=0; i<jawaban.length; i++){
       }
 
     }
+
+    
     if(i==11){
 
       if(jawaban[11].value.length==1){
@@ -385,13 +387,12 @@ for (let i=0; i<jawaban.length; i++){
               jawaban[11].className = jawaban[11].className.replace('boxmerah', 'boxhijau');
             }
           }
-          
-          lanjut
-          setTimeout(function (){
+            
+              //lanjut
+            setTimeout(function (){
             document.getElementById('lanjut6').className = document.getElementById('lanjut6').className.replace('hilang','');
           }, 500)
         } else{
-
           if (jawaban[11].className.indexOf('boxmerah') == -1) {
             if (jawaban[11].className.indexOf('boxhijau') == -1) {
               jawaban[11].className += ' boxmerah';
@@ -404,6 +405,39 @@ for (let i=0; i<jawaban.length; i++){
       }
 
     }
+    // if(i==11){
+
+    //   if(jawaban[11].value.length==1){
+
+    //     if(jawaban[11].value==3){
+    //       //boxwarna
+    //       if (jawaban[11].className.indexOf('boxhijau') == -1) {
+    //         if (jawaban[11].className.indexOf('boxmerah') == -1) {
+    //           jawaban[11].className += ' boxhijau';
+    //         } else {
+    //           jawaban[11].className = jawaban[11].className.replace('boxmerah', 'boxhijau');
+    //         }
+    //       }
+          
+    //       lanjut
+    //       setTimeout(function (){
+    //         document.getElementById('lanjut6').className = document.getElementById('lanjut6').className.replace('hilang','');
+    //       }, 500)
+
+    //     } else{
+
+    //       if (jawaban[11].className.indexOf('boxmerah') == -1) {
+    //         if (jawaban[11].className.indexOf('boxhijau') == -1 ) {
+    //           jawaban[11].className += ' boxmerah';
+    //         } else {
+    //           jawaban[11].className = jawaban[11].className.replace('boxhijau', 'boxmerah');
+    //         }
+    //       }
+    //     }
+
+    //   }
+
+    // }
 
 
 

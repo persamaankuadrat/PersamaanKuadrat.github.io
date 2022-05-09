@@ -20,25 +20,24 @@
     </div>
   </div>
 <section>
-    <ul>
-        <li><a class="active" <a href="index.html">Halaman Utama&nbsp;&nbsp;&nbsp;&nbsp;<img src="homecyan.png"width='35px' height='35px'></a></li>
-      </ul>
       <nav>
-        <div class="button-nav">
-      <button class="bttn" button onclick="location.href='apersepsi.html'">Mengenal Persamaan Kuadrat</button>
-      <button class="dropbtn dropdown-btn" onclick="ftampil()">A. Pengertian Persamaan Kuadrat
-        <i class="fa fa-caret-down"></i>
-      </button>
+      <a class="home btn2 third" href="index.html">
+        <img src="homered.png" width='160px' height='60px'>
+        </a><br>
+
+
+      <div class="button-nav">
+    <button class="bttn" button onclick="location.href='apersepsi.html'">Mengenal Persamaan Kuadrat</button>
+    <button class="dropbtn dropdown-btn" onclick="ftampil()">A. Pengertian Persamaan Kuadrat
+      <i class="fa fa-caret-down"></i>
+    </button>
 
       <div class="dropdown-content dropdown-container">
         <a href="umum.html">1. Bentuk Umum</a>
         <a href="bukanpenyelesaian.html">2. Penyelesaian dan Bukan Penyelesaian</a>
         <a href="rangkuman1.html">Rangkuman</a>
-        <a href="kuis1_awal.html">Kuis</a>
+        <a href="kuis1_awal.html">Kuis 1</a>
       </div>
-
-  
-      
        <button class="dropbtn dropdown-btn" onclick="ftampil()">B. Menyelesaikan Persamaan Kuadrat
           <i class="fa fa-caret-down"></i>
       </button>
@@ -83,7 +82,7 @@
       <div class="subsection">
         C. Sifat - sifat Akar
       </div>
-      <button class="isimateri">Klik Untuk Melihat Tujuan Pembelajaran</button><br>
+      <button class="isimateri btn2 third">Klik Untuk Melihat Tujuan Pembelajaran</button><br>
       <div id="isimateri" class="hilang">
           <b> Tujuan Pembelajaran </b>
           <ol>
@@ -188,26 +187,26 @@
         
         
         
-        
+        </div>
          </div>
 <br>
       <div class="marimencoba">
-        <img src="marimencobai.png" width="300" height="70" class="gmb">
+        <img src="marimencoba.png" width="300" height="70" class="gmb">
           <p>Tanpa menentukan akar-akarnya, tentukan banyaknya akar real dari persamaan berikut.</p>
           <p>a. &nbsp;&nbsp;&nbsp;\[4x^{2} - 20x + 23 = 0\]</p>
           <p>b. &nbsp;&nbsp;&nbsp;\[x^{2} - 6x + 9 = 0\]</p>
           <p>c. &nbsp;&nbsp;&nbsp;\[7x^{2} + 3x + 7 = 0\]</p>
           <br>
           <center>
-            <img src="Kolom Interaktif.png"><br>
-          <button class="isimateri petunjuk">Klik Untuk Melihat Petunjuk Pengisian Soal</button><br>   
-          <div id="petunjuk" class="hilang">
+            <img src="kolominteraktif.png"><br>
+          <!-- <button class="isimateri petunjuk">Klik Untuk Melihat Petunjuk Pengisian Soal</button><br>    -->
+          <div id="isimateri" class="">
               <b>Cara menjawab soal : </b><br>
               <ol>
                 <li>Tuliskan jawaban pada kolom kotak yang sudah disediakan.</li><br>
                 <li>Setelah menulis jawaban pada kolom, ketuk bagian layar agar dapat melihat warna kotak.</li><br>
                 <li>Jika kotak berwarna hijau maka jawabanmu benar, jika berwarna merah atau tidak berwarna sekalipun maka jawabanmu salah.</li><br>
-                <li>Kolom jawaban akan berlanjut jika menjawab dengan benar.</li>
+                <li>Kolom jawaban akan berlanjut jika kamu menjawab dengan benar.</li>
             </ol>
             </div><br>
           </center>
@@ -216,19 +215,19 @@
             <li>
               Diketahui persamaan kuadrat : \[4x^{2} - 20x + 23 = 0\]<br>
               <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                \[a = \] <input type="text" class="input1" maxlength="1"></p>
+                \[a = \] <input type="text" placeholder="...a..." class="input1" maxlength="1"></p>
 
                 <p class="hilang" id="lanjut1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                  \[b = \] <input type="text" class="input1" maxlength="3"></p>
+                  \[b = \] <input type="text" placeholder="...b..." class="input1" maxlength="3"></p>
 
                   <p class="hilang" id="lanjut2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                    \[c = \] <input type="text" class="input1" maxlength="2"></p>
+                    \[c = \] <input type="text" placeholder="...c..." class="input1" maxlength="2"></p>
 
                     <p class="hilang" id="lanjut3">\[\Leftrightarrow D = b^{2} - 4 a c \]<br><br>
-                    \[\Leftrightarrow D = (\]<input type="text" class="input1" maxlength="3">\[)^2 - 4  \times \] <input type="text" class="input1" maxlength="1"> \[\times \] <input type="text" class="input1" maxlength="2"></p>
+                    \[\Leftrightarrow D = (\]<input type="text" placeholder="...b..." class="input1" maxlength="3">\[)^2 - 4  \times \] <input type="text" placeholder="...a..." class="input1" maxlength="1"> \[\times \] <input type="text" placeholder="...c..." class="input1" maxlength="2"></p>
 
                     <p class="hilang" id="lanjut4">
-                      \[\Leftrightarrow D = \]<input type="text" class="input1" maxlength="3">\[-\] <input type="text" class="input1" maxlength="3"> </p>
+                      \[\Leftrightarrow D = \]<input type="text" class="input1" maxlength="3">&emsp;\[-\]&emsp; <input type="text" class="input1" maxlength="3"> </p>
   
                       <p class="hilang" id="lanjut5">
                         \[\Leftrightarrow D = \]<input type="text" class="input1" maxlength="2"></p>
@@ -246,8 +245,8 @@
                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                           <input onclick="checkbenar()"
                                             type="radio" id="berbeda" name="gender" value="berbeda">
-                                            <label for="berbeda">mempunyai 2 akar real berbeda</label>
-                                        
+                                            <label for="berbeda">mempunyai 2 akar real berbeda</label><br>
+                                       *Untuk menjawabnya klik salah satu tombol diatas
                                 <p id="jawaban"></p> 
                             </p>
 
@@ -258,19 +257,19 @@
             <li class="hilang" id="lanjut7">
               <p>Diketahui persamaan kuadrat : \[x^{2} - 6x + 9 = 0\]<br>
               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                \[a = \] <input type="text" class="input1" maxlength="1"></p>
+                \[a = \] <input type="text" placeholder="...a..." class="input1" maxlength="1"></p>
 
                 <p class="hilang" id="lanjut8">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                  \[b = \] <input type="text" class="input1" maxlength="2"></p>
+                  \[b = \] <input type="text" placeholder="...b..." class="input1" maxlength="2"></p>
 
                   <p class="hilang" id="lanjut9">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                    \[c = \] <input type="text" class="input1" maxlength="1"></p>
+                    \[c = \] <input type="text" placeholder="...c..." class="input1" maxlength="1"></p>
 
                     <p class="hilang" id="lanjut10">\[\Leftrightarrow D = b^{2} - 4 a c \]<br><br>
-                    \[\Leftrightarrow D = (\]<input type="text" class="input1" maxlength="2">\[)^2 - 4  \times \] <input type="text" class="input1" maxlength="1"> \[\times \] <input type="text" class="input1" maxlength="1"></p>
+                    \[\Leftrightarrow D = (\]<input type="text" placeholder="...b..." class="input1" maxlength="2">\[)^2 - 4  \times \] <input type="text" placeholder="...a..." class="input1" maxlength="1"> \[\times \] <input type="text" placeholder="...c..." class="input1" maxlength="1"></p>
 
                     <p class="hilang" id="lanjut11">
-                      \[\Leftrightarrow D = \]<input type="text" class="input1" maxlength="3">\[-\] <input type="text" class="input1" maxlength="3"> </p>
+                      \[\Leftrightarrow D = \]<input type="text" class="input1" maxlength="3">&emsp;\[-\] &emsp;<input type="text" class="input1" maxlength="3"> </p>
   
                       <p class="hilang" id="lanjut12">
                         \[\Leftrightarrow D = \]<input type="text" class="input1" maxlength="1"></p>
@@ -288,8 +287,8 @@
                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                           <input onclick="checksalahh()"
                                             type="radio" id="berbeda" name="gender" value="berbeda">
-                                            <label for="berbeda">mempunyai 2 akar real berbeda</label>
-                                        
+                                            <label for="berbeda">mempunyai 2 akar real berbeda</label><br>
+                                            *Untuk menjawabnya klik salah satu tombol diatas
                                 <p id="jawaban1"></p> 
                             </p>
 
@@ -298,19 +297,19 @@
                             <li class="hilang" id="lanjut14">
                               <p>Diketahui persamaan kuadrat : \[7x^{2} + 3x + 7 = 0\]<br>
                               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                                \[a = \] <input type="text" class="input1" maxlength="1"></p>
+                                \[a = \] <input type="text" placeholder="...a..." class="input1" maxlength="1"></p>
                 
                                 <p class="hilang" id="lanjut15">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                                  \[b = \] <input type="text" class="input1" maxlength="1"></p>
+                                  \[b = \] <input type="text" placeholder="...b..." class="input1" maxlength="1"></p>
                 
                                   <p class="hilang" id="lanjut16">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                                    \[c = \] <input type="text" class="input1" maxlength="1"></p>
+                                    \[c = \] <input type="text" placeholder="...c..." class="input1" maxlength="1"></p>
                 
                                     <p class="hilang" id="lanjut17">\[\Leftrightarrow D = b^{2} - 4 a c \]<br><br>
-                                    \[\Leftrightarrow D = (\]<input type="text" class="input1" maxlength="1">\[)^2 - 4  \times \] <input type="text" class="input1" maxlength="1"> \[\times \] <input type="text" class="input1" maxlength="1"></p>
+                                    \[\Leftrightarrow D = (\]<input type="text" placeholder="...b..." class="input1" maxlength="1">\[)^2 - 4  \times \] <input type="text" placeholder="...a..." class="input1" maxlength="1"> \[\times \] <input type="text" placeholder="...c..." class="input1" maxlength="1"></p>
                 
                                     <p class="hilang" id="lanjut18">
-                                      \[\Leftrightarrow D = \]<input type="text" class="input1" maxlength="2">\[-\] <input type="text" class="input1" maxlength="3"> </p>
+                                      \[\Leftrightarrow D = \]<input type="text" class="input1" maxlength="2"> &emsp;\[-\] &emsp;<input type="text" class="input1" maxlength="3"> </p>
                   
                                       <p class="hilang" id="lanjut19">
                                         \[\Leftrightarrow D = \]<input type="text" class="input1" maxlength="4"></p>
@@ -328,8 +327,8 @@
                                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                           <input onclick="checksalahhh()"
                                                             type="radio" id="berbeda" name="gender" value="berbeda">
-                                                            <label for="berbeda">mempunyai 2 akar real berbeda</label>
-                                                        
+                                                            <label for="berbeda">mempunyai 2 akar real berbeda</label><br>
+                                                            *Untuk menjawabnya klik salah satu tombol diatas
                                                 <p id="jawaban2"></p> 
                                             </p>
 
@@ -342,32 +341,32 @@
       <div class="slideshow-container">
         
         <div class="mySlides">
-          <iframe src="no1diskriminan.html" title="W3Schools Free Online Web Tutorials"  allowtransparency="true" width="1000" height="1100" frameborder="0" scrolling="no">
+          <iframe src="no1diskriminan.html" title="nomor1"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor satu-->
 
         <div class="mySlides">
-          <iframe src="no2diskriminan.html" title="W3Schools Free Online Web Tutorials"  allowtransparency="true" width="1000" height="1100" frameborder="0" scrolling="no">
+          <iframe src="no2diskriminan.html" title="nomor2"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor dua-->
 
         <div class="mySlides">
-          <iframe src="no3diskriminan.html" title="W3Schools Free Online Web Tutorials"  allowtransparency="true" width="1000" height="1100" frameborder="0" scrolling="no">
+          <iframe src="no3diskriminan.html" title="nomor3"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor tiga-->
 
         <div class="mySlides">
-          <iframe src="no4diskriminan.html" title="W3Schools Free Online Web Tutorials"  allowtransparency="true" width="1000" height="1100" frameborder="0" scrolling="no">
+          <iframe src="no4diskriminan.html" title="nomor4"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor empat-->
 
         <div class="mySlides">
-          <iframe src="no5diskriminan.html" title="W3Schools Free Online Web Tutorials"  allowtransparency="true" width="1000" height="1100" frameborder="0" scrolling="no">
+          <iframe src="no5diskriminan.html" title="nomor5"  allowtransparency="true" width="1000" height="1200" frameborder="0" scrolling="no">
           </iframe>
         </div><!--penutup div nomor lima-->
         
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
           
           
           <div style="text-align:center" class="tempatnomor">
@@ -392,14 +391,15 @@
       <a href="Jumlah.html" class="next"><img src="selanjutnya.png" width="250px" height="60px"></a>
     </div>
 </footer>
-<script src="jsrumusabc.js"></script>
+<!-- <script src="jsrumusabc.js"></script> -->
 <script src="jsnomorfaktor.js"></script>
 <script src="jsinteraksidiskriminan.js"></script>
-<script src="jsno1diskriminan.js"></script>
+<script src="jsrumuskuadratis.js"></script>
+<!-- <script src="jsno1diskriminan.js"></script>
 <script src="jsno2diskriminan.js"></script>
 <script src="jsno3diskriminan.js"></script>
 <script src="jsno4diskriminan.js"></script>
-<script src="jsno5diskriminan.js"></script>
+<script src="jsno5diskriminan.js"></script> -->
 
 </article>
 

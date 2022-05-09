@@ -168,16 +168,16 @@
   
   
   .bttn{
-    background-color:#d68c45; /* warna buttonnya YG EVALUASI*/
+    background-color:#2c6e49; /* warna buttonnya YG EVALUASI*/
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border: 1px solid #4c956c;
+    border: 1px solid #2c6e49;
     color:#fefee3;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
-    width: 90%;
+    width: 99%;
     display: block 
   }
   .bttn-nav .button:not(:last-child) {
@@ -351,7 +351,7 @@ a {
     float: right;
     padding: 20px;
     width: 77%;
-    background-color: #fefee3;
+    background-color: #caf7d3;
     height: 520px; 
     overflow: scroll;
     overflow-x:hidden ;

@@ -209,9 +209,9 @@ for (let i=0; i<jawaban.length; i++){
 
     if(i==6){
 
-      if(jawaban[6].value.length==2){
+      if(jawaban[6].value.length==1){
     
-        if(jawaban[6].value=="5x"){
+        if(jawaban[6].value=="5"){
           //boxwarna
           console.log("ok")
           if (jawaban[6].className.indexOf('boxhijau') == -1) {
@@ -532,9 +532,9 @@ for (let i=0; i<jawaban.length; i++){
 
     if (i==16){
 
-      if(jawaban[16].value.length==2){
+      if(jawaban[16].value.length==1){
 
-        if(jawaban[16].value=="6x"){
+        if(jawaban[16].value=="6"){
           //boxwarna
 
           if (jawaban[16].className.indexOf('boxhijau') == -1) {
@@ -617,11 +617,11 @@ for (let i=0; i<jawaban.length; i++){
   
 function checksalah() {
   console.log("salah");
-  document.getElementById("jawaban").innerHTML="<span style='color: red';>Jawaban Salah</span>";
+  document.getElementById("jawaban").innerHTML="<span style='color: red';><h2>Maaf Jawaban Mu Salah, Silahkan Coba Lagi</h2></span>";
 }
 function checkbenar() {
   console.log("benar");
-  document.getElementById("jawaban").innerHTML="<span style='color: green';>Jawaban Benar</span>";
+  document.getElementById("jawaban").innerHTML="<span style='color: green';><h2>Selamat Jawaban Mu Benar ^-^</h2></span><br> Lanjutkan untuk menjawab soal berikutnya.";
   setTimeout(function (){
     document.getElementById('lanjut5').className = document.getElementById('lanjut5').className.replace('hilang','');
   }, 500)
@@ -629,11 +629,11 @@ function checkbenar() {
 
 function checksalahh() {
   console.log("salah");
-  document.getElementById("jawaban1").innerHTML="<span style='color: red';>Jawaban Salah</span>";
+  document.getElementById("jawaban1").innerHTML="<span style='color: red';><h2>Maaf Jawaban Mu Salah, Silahkan Coba Lagi</h2></span>";
 }
 function checkbenarr() {
   console.log("benar");
-  document.getElementById("jawaban1").innerHTML="<span style='color: green';>Jawaban Benar</span>";
+  document.getElementById("jawaban1").innerHTML="<span style='color: green';><h2>Selamat Jawaban Mu Benar ^-^</h2></span>";
   setTimeout(function (){
     document.getElementById('lanjut11').className = document.getElementById('lanjut11').className.replace('hilang','');
   }, 500)

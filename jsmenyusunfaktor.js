@@ -667,11 +667,11 @@ for (let i=0; i<jawaban.length; i++){
   
 function checksalah() {
   console.log("salah");
-  document.getElementById("jawaban").innerHTML="<span style='color: red';>Jawaban Salah</span>";
+  document.getElementById("jawaban").innerHTML="<span style='color: red';><h2>Maaf Jawaban Mu Salah, Silahkan Coba Lagi</h2></span>";
 }
 function checkbenar() {
   console.log("benar");
-  document.getElementById("jawaban").innerHTML="<span style='color: green';>Jawaban Benar</span>";
+  document.getElementById("jawaban").innerHTML="<span style='color: green';><h2>Selamat Jawaban Mu Benar ^-^</h2></span><br> Lanjutkan untuk menjawab soal berikutnya.";
   setTimeout(function (){
     document.getElementById('lanjut6').className = document.getElementById('lanjut6').className.replace('hilang','');
   }, 500)
@@ -679,11 +679,11 @@ function checkbenar() {
 
 function checksalahh() {
   console.log("salah");
-  document.getElementById("jawaban1").innerHTML="<span style='color: red';>Jawaban Salah</span>";
+  document.getElementById("jawaban1").innerHTML="<span style='color: red';><h2>Maaf Jawaban Mu Salah, Silahkan Coba Lagi</h2></span>";
 }
 function checkbenarr() {
   console.log("benar");
-  document.getElementById("jawaban1").innerHTML="<span style='color: green';>Jawaban Benar</span>";
+  document.getElementById("jawaban1").innerHTML="<span style='color: green';><h2>Selamat Jawaban Mu Benar ^-^</h2></span>";
   setTimeout(function (){
     document.getElementById('lanjut13').className = document.getElementById('lanjut13').className.replace('hilang','');
   }, 500)
