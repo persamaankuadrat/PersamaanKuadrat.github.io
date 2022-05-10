@@ -87,12 +87,12 @@ text-align: center;
 	font-family: arial;
 	font-weight: bold;
 	border: 1px solid black;
-	line-height: 50px;
+	line-height: 46px;
 	margin: auto;
-	margin-left: 42px;
-	margin-top: 98px;
-	padding: 15px;
-	border-radius: 5px;
+	margin-left: 18px;
+	margin-top: 80px;
+	padding: 7px;
+	border-radius: 10px;
 	float: left;
 }
 	.a:hover
@@ -101,7 +101,7 @@ text-align: center;
 	.a2 { 
 		text-decoration: none;
 		color: black;
-		background-color: orange;
+		background-color: rgb(8, 129, 64);
 		font-family: arial;
 		font-weight: bold;
 		border: 1px solid black;
@@ -114,7 +114,7 @@ text-align: center;
 		float: left;
 	}
 		.a2:hover
-		{ background-color: rgb(8, 129, 64)
+		{ background-color: rgb(229, 248, 82);
 		}
 .a3 { 
 			text-decoration: none;
@@ -125,10 +125,10 @@ text-align: center;
 			border: 1px solid black;
 			line-height: 50px;
 			margin: auto;
-			margin-left: 273px;
-			margin-top: 56px;
+			margin-left: 133px;
+			margin-top: 20px;
 			padding: 25px;
-			border-radius: 5px;
+			border-radius: 7px;
 			float: left;
 		}
 .a3:hover
@@ -150,8 +150,8 @@ text-align: center;
 	transition:0.5s;
 }
 .imgmateri:hover{
-	width:230px;
-	height:230px;
+	width:150px;
+	height:150px;
 	transition:0.5s;
 }
 .imgevaluasi:hover{
@@ -160,6 +160,62 @@ text-align: center;
 	transition:0.5s;
 }
 	
+
+/* dibawah ini untuk tombol home */
+.home{
+
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+  }
+
+.btn {
+box-sizing: border-box;
+-webkit-appearance: none;
+ -moz-appearance: none;
+	  appearance: none;
+background-color: transparent;
+border: 2px solid #e74c3c;
+border-radius: 0.6em;
+color: #e74c3c;
+cursor: pointer;
+display: flex;
+align-self: center;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1;
+margin: 10px;
+padding: 1.2em 2.8em;
+text-decoration: none;
+text-align: center;
+text-transform: uppercase;
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+
+}
+.btn:hover, .btn:focus {
+color: #fff;
+outline: 0;
+}
+.second {
+border-radius: 3em;
+border-color: #1abc9c;
+color: #fff;
+background-image: linear-gradient(to right, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+background-position: 0 0;
+background-size: 100%;
+transition: background 300ms ease-in-out;
+}
+.second:hover {
+background-position: 100px;
+}
+
+
+
+
+
 
 
 
