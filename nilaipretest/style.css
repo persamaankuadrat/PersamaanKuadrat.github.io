@@ -10,14 +10,14 @@ body {
     line-height: 27px;
     text-align: justify;
     padding: 20px;
-    border: 3px dotted red;
-    background-color: #ffe4d6;
+    border: 3px dotted rgb(7, 92, 34);
+    background-color: #aeeec4;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header{
-    background-image: url(headerr.png);
-    height: 80px;
+    background-image: url(juduleyol.png);
+    height: 90px;
     text-align:center;
     font-size: 35px;
     color: white;
@@ -56,7 +56,7 @@ h1 {
     display: inline-block;
     width: 90%;
     text-align: center;
-    border: 5px solid red;
+    border: 5px solid rgb(35, 100, 43);
     margin-left: 5%;
     box-sizing: border-box;
     border-radius: 5px;
@@ -202,7 +202,7 @@ label {
 .cari {
     display: inline-block;
     padding: 2px 20px;
-    background-color: #ff5252;
+    background-color: #fb8f8f;
     position: relative;
     top: -5px;
     border-radius: 5px;
@@ -214,7 +214,7 @@ label {
 }
 
 .bgnya {
-    background-color: #ffccb2;
+    background-color: #b6f2b4;
     padding: 10px 5px 5px 5px;
 }
 
@@ -241,7 +241,7 @@ td {
 
 .jrkbawah {
     margin-bottom: 2px;
-    background-color: #ff8f8f;
+    background-color: #48aa57;
 }
 
 .navigasi {
@@ -253,7 +253,7 @@ td {
 .navigasi a {
     background-color: #ffccb2;
     padding: 10px;
-    border: 2px solid red;
+    border: 2px solid rgb(107, 29, 29);
 
 }
 
